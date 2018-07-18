@@ -1,5 +1,5 @@
 from django.contrib.auth import authenticate, login, logout
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from website.models import Profile, Player, ICC, Country, Tournament, CricketBoard, TeamOwner
 from .forms import RegisterForm, LoginForm
@@ -70,46 +70,83 @@ def logout_user(request):
 
 def marketplace_iccs(request):
     all_iccs = ICC.objects.all()
-    text_singular = "ICC"
-    text_plural = "ICC"
-    return render(request, 'website/marketplace/common.html',
-                  {'items': all_iccs, 'text_s': text_singular, 'text_p': text_plural})
+    text_s = "ICC"
+    text_p = "ICC"
+    return render(request, 'website/marketplace.html', {'items': all_iccs, 'text_s': text_s, 'text_p': text_p})
 
 
 def marketplace_countries(request):
     all_countries = Country.objects.all()
-    text_singular = "Country"
-    text_plural = "Countries"
-    return render(request, 'website/marketplace/common.html',
-                  {'items': all_countries, 'text_s': text_singular, 'text_p': text_plural})
+    text_s = "Country"
+    text_p = "Countries"
+    return render(request, 'website/marketplace.html', {'items': all_countries, 'text_s': text_s, 'text_p': text_p})
 
 
 def marketplace_players(request):
     all_players = Player.objects.all()
-    text_singular = "Player"
-    text_plural = "Players"
-    return render(request, 'website/marketplace/common.html',
-                  {'items': all_players, 'text_s': text_singular, 'text_p': text_plural})
+    text_s = "Player"
+    text_p = "Players"
+    return render(request, 'website/marketplace.html', {'items': all_players, 'text_s': text_s, 'text_p': text_p})
 
 
 def marketplace_tournaments(request):
     all_tournaments = Tournament.objects.all()
-    text_singular = "Tournament"
-    text_plural = "Tournaments"
-    return render(request, 'website/marketplace/common.html',
-                  {'items': all_tournaments, 'text_s': text_singular, 'text_p': text_plural})
+    text_s = "Tournament"
+    text_p = "Tournaments"
+    return render(request, 'website/marketplace.html', {'items': all_tournaments, 'text_s': text_s, 'text_p': text_p})
 
 
 def marketplace_boards(request):
     all_boards = CricketBoard.objects.all()
-    text_singular = "Board"
-    text_plural = "Boards"
-    return render(request, 'website/marketplace/common.html',
-                  {'items': all_boards, 'text_s': text_singular, 'text_p': text_plural})
+    text_s = "Board"
+    text_p = "Boards"
+    return render(request, 'website/marketplace.html', {'items': all_boards, 'text_s': text_s, 'text_p': text_p})
 
 
 def marketplace_team_owners(request):
     all_owners = TeamOwner.objects.all()
-    text_singular = "Team Owner"
-    text_plural = "Team Owners"
-    return render(request, 'website/marketplace/common.html', {'items': all_owners, 'text_s': text_singular, 'text_p': text_plural})
+    text_s = "Owner"
+    text_p = "Owners"
+    return render(request, 'website/marketplace.html', {'items': all_owners, 'text_s': text_s, 'text_p': text_p})
+
+
+def player_details(request, item_id):
+    selected_item = get_object_or_404(Player, pk=item_id)
+    text_s = "Player"
+    text_p = "Players"
+    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
+
+
+def country_details(request, item_id):
+    selected_item = get_object_or_404(Country, pk=item_id)
+    text_s = "Country"
+    text_p = "Countries"
+    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
+
+
+def owner_details(request, item_id):
+    selected_item = get_object_or_404(TeamOwner, pk=item_id)
+    text_s = "Owner"
+    text_p = "Owners"
+    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
+
+
+def board_details(request, item_id):
+    selected_item = get_object_or_404(CricketBoard, pk=item_id)
+    text_s = "Board"
+    text_p = "Boards"
+    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
+
+
+def icc_details(request, item_id):
+    selected_item = get_object_or_404(ICC, pk=item_id)
+    text_s = "Board"
+    text_p = "Boards"
+    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
+
+
+def tournament_details(request, item_id):
+    selected_item = get_object_or_404(Tournament, pk=item_id)
+    text_s = "Board"
+    text_p = "Boards"
+    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})

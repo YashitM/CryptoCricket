@@ -1,0 +1,106 @@
+{% extends 'website/base.html' %}
+
+{% load staticfiles %}
+{% load custom_tags %}
+
+{% block content %}
+
+    <main>
+        <div class="magazi-pages-links margin-bottom-80 padding-top-60">
+            <div class="container">
+                <ul>
+                    <li><a href="#" title=""><i class="fa fa-home"></i></a></li>
+                    <li><span>Marketplace</span></li>
+                    <li><a href="{% url text_p|lower %}" title="">{{ text_p }}</a></li>
+                    {% if text_p == text_s %}
+                        <li><a href="{% url text_s|lower item_id=item.id %}" title="">{{ item.board_name }}</a></li>
+                    {% else %}
+                        <li><a href="{% url text_s|lower item_id=item.id %}" title="">{{ item.name }}</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="magazi-product-complete-dt">
+            <div class="container">
+                <div class="row">
+                    {% if text_s == "Player" %}
+                        <div class="col-md-7">
+                            <div class="magazi-product-pics">
+                                <div class="pro-large-preview pull-right">
+                                    <div class="slider-for">
+                                        <div class="pro-large-img">
+                                            <img src="{{ item.image.url }}" alt="pro-img1">
+                                        </div>
+                                    </div><!--slider for end-->
+                                </div><!--pro-large-preview end-->
+                            </div><!---magazi-product-pics end-->
+                        </div>
+                    {% endif %}
+                    <div class="col-md-5">
+                        <div class="magazi-data-details">
+                            {% if text_s == text_p %}
+                                <h2>{{ item.board_name }}</h2>
+                            {% else %}
+                                <h2>{{ item.name }}</h2>
+                            {% endif %}
+                            <span>{{ item.last_bid }} ETH</span>
+                            <p class="margin-bottom-50">Transactions: {{ item.transactions }}</p>
+                            <div class="handler-cart">
+                                <div class="add-to-cart">
+                                    <a href="#" title="" class="adding-cart">Buy Now</a>
+                                </div><!--add-to-cart end-->
+                            </div>
+                        </div><!--magazi-data-details end-->
+                    </div>
+                </div>
+            </div>
+        </div><!--magazi-product-complete-dt end-->
+
+        <div class="magazi-details-tab margin-top-100">
+            <div class="container">
+                <div class="magazi-tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
+                        <li role="presentation"><a href="#size" aria-controls="size" role="tab" data-toggle="tab">Transactions</a></li>
+                      </ul>
+                </div><!--magazi-tabs end-->
+                <div class="magazi-tabs-details">
+                     <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="description">
+                            <div class="description-details">
+                                <h3>{{ text_s }} details</h3>
+                                <p class="margin-bottom-100">{{ item.description }}</p>
+                            </div><!--description-details end-->
+                        </div><!--description end-->
+                        <div role="tabpanel" class="tab-pane" id="size">
+                            <div class="description-details">
+                                <h3>Item details</h3>
+                                <p class="margin-bottom-100">This green bedroom lamp has been designed to suit your needs. It is one of the best lamp on the market and can </p>
+                            </div><!--description-details end-->
+                        </div>
+                      </div>
+                </div><!--magazi-tabs-details end-->
+            </div>
+        </div><!--magazi-details-tab end-->
+
+        <div class="magazi-pages-control">
+            <div class="magazi-prev">
+                <a href="#" title="">Previous Item</a>
+                <div class="magazi-suggester-pro">
+                    <img src="assets/img/camera.png" alt="">
+                    <h4>Nikon DSLR Camera</h4>
+                </div>
+            </div>
+            <div class="magazi-next">
+                <a href="#" title="">Next Item</a>
+                <div class="magazi-suggester-pro">
+                    <img src="assets/img/camera.png" alt="">
+                    <h4>Nikon DSLR Camera</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

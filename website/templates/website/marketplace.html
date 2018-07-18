@@ -9,8 +9,8 @@
             <div class="container">
                 <ul>
                     <li><a href="#" title=""><i class="fa fa-home"></i></a></li>
-                    <li><a href="#" title="">Marketplace</a></li>
-                    <li><span>{{ text_p }}</span></li>
+                    <li><span>Marketplace</span></li>
+                    <li><a href="{% url text_p|lower %}" title="">{{ text_p }}</a></li>
                 </ul>
             </div>
         </div>
@@ -55,12 +55,12 @@
                                             <p>
                                                 <span>{{ item.last_bid }} ETH</span>
                                             </p>
-                                            <div class="buy" id="buy_now{{ item.id }}">
-                                                <span>Buy Now!</span>
+                                            <div class="buy">
+                                                <a style="list-style-type: none; color: black;" href="{% url text_s|lower item_id=item.id %}"><span>About</span></a>
                                             </div>
-{#                                            <div class="buy" id="buy_now{{ player.id }}">#}
-{#                                                <span>View More</span>#}
-{#                                            </div>#}
+                                            <div class="buy" id="buy_now{{ item.id }}">
+                                                <span style="color:#000;">Buy Now!</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
