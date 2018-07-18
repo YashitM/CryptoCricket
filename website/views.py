@@ -150,3 +150,27 @@ def tournament_details(request, item_id):
     text_s = "Board"
     text_p = "Boards"
     return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
+
+
+def successful_transaction(request, item_id, current_bid, item_type):
+    global selected_item
+    current_user = request.user
+
+    if item_type == "Player":
+        selected_item = Player.objects.get(pk=item_id)
+    elif item_type == "Board":
+        selected_item = CricketBoard.objects.get(pk=item_id)
+    elif item_type == "Country":
+        selected_item = Country.objects.get(pk=item_id)
+    elif item_type == "Owner":
+        selected_item = TeamOwner.objects.get(pk=item_id)
+    elif item_type == "Tournament":
+        selected_item = Tournament.objects.get(pk=item_id)
+    elif item_type == "ICC":
+        selected_item = ICC.objects.get(pk=item_id)
+
+    selected_item.last_bid = current_bid
+    selected_item.owner = current_user
+    selected_item.save()
+
+

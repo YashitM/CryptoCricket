@@ -45,11 +45,20 @@
                             {% else %}
                                 <h2>{{ item.name }}</h2>
                             {% endif %}
-                            <span>{{ item.last_bid }} ETH</span>
-                            <p class="margin-bottom-50">Transactions: {{ item.transactions }}</p>
+                            <span>{{ item.last_bid }}</span>&nbsp;ETH
+                            <p class="margin-bottom-0">Transactions:&nbsp;<span>{{ item.transactions }}</span></p>
+                            {% if item.owner %}
+                                <p class="margin-bottom-50">Owner:&nbsp;<span>{{ item.owner }}</span> </p>
+                            {% else %}
+                                <p class="margin-bottom-50">Owner:&nbsp;<span>Unassigned</span></p>
+                            {% endif %}
                             <div class="handler-cart">
                                 <div class="add-to-cart">
-                                    <a href="#" title="" class="adding-cart">Buy Now</a>
+                                    {% if user.is_authenticated %}
+                                        <a href="#" id="buy_now{{ item.id }}" title="" class="adding-cart">Buy Now</a>
+                                    {% else %}
+                                        <a href="{% url 'login' %}" title="" class="adding-cart">Login to Buy Now</a>
+                                    {% endif %}
                                 </div><!--add-to-cart end-->
                             </div>
                         </div><!--magazi-data-details end-->
@@ -57,6 +66,46 @@
                 </div>
             </div>
         </div><!--magazi-product-complete-dt end-->
+
+        <div class="modal fade" id="metamask_download_modal{{ item.id }}">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create your trading account</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>You'll need a safe place to store all of your Contract Cards! The perfect place is in a secure wallet like MetaMask.</p>
+                        <a href="https://metamask.io" target="_blank" title="Install Metamask" rel="noopener noreferrer" style="width: 100%; display: inline-block;">
+                            <img src="{% static 'website/assets/img/metamask-download.png' %}" alt="Metamask download">
+                        </a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="metamask_downloaded_modal{{ item.id }}">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create your trading account</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>The current buying price for this contract is {{ item.last_bid }}ETH.</p>
+                        <p>If someone decides to snatch the contract away from you, you will be paid {{ item.last_bid|multiply:multiplier }}ETH</p>
+                        <p>Transactions on the blockChain take time to process. By the time you buy this contract, it's price may already be higher than is shown on the card and your transaction will fail.</p>
+                        <a href="https://metamask.io" target="_blank" title="Install Metamask" rel="noopener noreferrer" style="width: 100%; display: inline-block;">
+                            <img width="300" height="50" src="{% static 'website/assets/img/metamask-pay.png' %}" alt="Metamask download">
+                        </a>
+                        <i>If someone else outbid you during this time, your ETH will be refunded.</i>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="magazi-details-tab margin-top-100">
             <div class="container">

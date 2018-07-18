@@ -11,6 +11,7 @@ class Player(models.Model):
     last_bid = models.FloatField()
     image = models.ImageField(null=True, blank=True)
     description = models.TextField(max_length=3000)
+    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
 
 
 class TeamOwner(models.Model):
@@ -18,6 +19,7 @@ class TeamOwner(models.Model):
     description = models.TextField(max_length=3000)
     last_bid = models.FloatField(default=0)
     transactions = 0
+    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
 
 
 class Tournament(models.Model):
@@ -25,6 +27,7 @@ class Tournament(models.Model):
     description = models.TextField(max_length=3000)
     last_bid = models.FloatField()
     transactions = 0
+    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
 
 
 class CricketBoard(models.Model):
@@ -32,6 +35,7 @@ class CricketBoard(models.Model):
     description = models.TextField(max_length=3000)
     last_bid = models.FloatField()
     transactions = 0
+    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
 
 
 class Country(models.Model):
@@ -39,6 +43,7 @@ class Country(models.Model):
     description = models.TextField(max_length=3000)
     last_bid = models.FloatField()
     transactions = 0
+    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
 
 
 class ICC(models.Model):
@@ -46,6 +51,7 @@ class ICC(models.Model):
     description = models.TextField(max_length=3000)
     last_bid = models.FloatField()
     transactions = 0
+    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
 
 
 class Profile(models.Model):

@@ -58,9 +58,14 @@
                                             <div class="buy">
                                                 <a style="list-style-type: none; color: black;" href="{% url text_s|lower item_id=item.id %}"><span>About</span></a>
                                             </div>
-                                            <div class="buy" id="buy_now{{ item.id }}">
-                                                <span style="color:#000;">Buy Now!</span>
-                                            </div>
+                                            {% if user.is_authenticated %}
+                                                <div class="buy" id="buy_now{{ item.id }}">
+                                                    <span style="color:#000;">Buy Now!</span>
+                                                </div>
+                                            {% else %}
+                                                <a href="{% url 'login' %}" title="" class="adding-cart">Login to Buy Now</a>
+                                            {% endif %}
+
                                         </div>
                                     </div>
                                 </div>
