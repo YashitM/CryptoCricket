@@ -1,0 +1,66 @@
+{% extends 'website/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <!-- start main-->
+    <main>
+
+        <div class="magazi-pages-links bd-bm padding-bottom-60 padding-top-60">
+            <div class="container">
+                <div class="magazi-pgg-links">
+                    <h2>Register</h2>
+                    <ul>
+                        <li><a href="#" title="">Home</a></li>
+                        <li><span>Register</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="magazi-login-register-forms padding-bottom-100">
+            <div class="container">
+                <div class="magazi-forms">
+                    <div class="magazi-main-form current" id="login-tab">
+                        <form class="padding-bottom-75" method="post" action="{% url 'register' %}">
+                            {% csrf_token %}
+
+                            {% if form.errors %}
+                                {{ form.errors }}
+                            {% endif %}
+                            <input class="margin-bottom-30" type="text" name="first_name" required id="id_first_name" placeholder="First Name">
+                            <input class="margin-bottom-30" type="text" name="last_name" required id="id_last_name" placeholder="Last Name">
+                            <input class="margin-bottom-30" type="text" name="username" required id="id_username" placeholder="Username">
+                            <input class="margin-bottom-30" type="text" name="email" required id="id_email" placeholder="Email">
+                            <input class="margin-bottom-30" type="password" name="password" required id="id_password" placeholder="Password">
+                            <input class="margin-bottom-30" type="password" name="confirm_password" required id="id_confirm_password" placeholder="Confirm Password">
+                            <input class="margin-bottom-30" type="text" name="eth_address" required id="id_eth_address" placeholder="Ethereum Address">
+                            <button type="submit" class="send-btn">Register</button>
+                        </form>
+                        <a class="from-instruct" href="#">Already have an account?</a>
+                        <a href="#" title="" class="lg-link">Login Here</a>
+                    </div>
+                </div><!--magazi-forms end-->
+            </div>
+        </div><!--magazi-login-register-forms end-->
+
+
+        <div class="magazi-subscribe text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Newsletter Subscription</h3>
+                        <form class="magazi-sub-form">
+                            <input type="email" class="form-control" name="email" placeholder="Enter your email" />
+                            <button type="submit" class="magazi-sub-btn">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- end main-->
+{% endblock %}

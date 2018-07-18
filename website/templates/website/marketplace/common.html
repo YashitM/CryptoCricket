@@ -1,0 +1,117 @@
+{% extends 'website/base.html' %}
+
+{% load staticfiles %}
+{% load custom_tags %}
+
+{% block content %}
+    <main>
+        <div class="magazi-pages-links margin-bottom-50">
+            <div class="container">
+                <ul>
+                    <li><a href="#" title=""><i class="fa fa-home"></i></a></li>
+                    <li><a href="#" title="">Marketplace</a></li>
+                    <li><span>{{ text_p }}</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="magazi-section-title text-center margin-top-60 margin-bottom-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>{{ text_p }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="magazi-list-view">
+            <div class="container">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="colmnlist">
+                        <div class="magazi-main-prodcts text-center">
+                        {% if items %}
+                            {% for item in items %}
+                                <div class="col-md-3 col-sm-6 col-xs-6 full-wdth">
+                                    <div class="magazi-product-inner margin-bottom-80">
+                                        {% if text_s == "Player" %}
+                                            <div class="magazi-product-thumb">
+                                                {% if item.image %}
+                                                    <img width="150" height="150" src="{{ item.image.url }}" alt="product-8">
+                                                {% else %}
+                                                    <img src="#" alt="product-8">
+                                                {% endif %}
+                                                <a href="#" class="magazi-overlay"></a>
+                                            </div>
+                                        {% endif %}
+                                        <div class="magazi-product-detail">
+                                            <h1>
+                                                {% if text_s == text_p %}
+                                                    <a href="#">{{ item.board_name }}</a>
+                                                {% else %}
+                                                    <a href="#">{{ item.name }}</a>
+                                                {% endif %}
+                                            </h1>
+                                            <p>
+                                                <span>{{ item.last_bid }} ETH</span>
+                                            </p>
+                                            <div class="buy" id="buy_now{{ item.id }}">
+                                                <span>Buy Now!</span>
+                                            </div>
+{#                                            <div class="buy" id="buy_now{{ player.id }}">#}
+{#                                                <span>View More</span>#}
+{#                                            </div>#}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="metamask_download_modal{{ item.id }}">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Create your trading account</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>You'll need a safe place to store all of your Contract Cards! The perfect place is in a secure wallet like MetaMask.</p>
+                                                <a href="https://metamask.io" target="_blank" title="Install Metamask" rel="noopener noreferrer" style="width: 100%; display: inline-block;">
+                                                    <img src="{% static 'website/assets/img/metamask-download.png' %}" alt="Metamask download">
+                                                </a>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-dismiss="modal">&times;</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="metamask_downloaded_modal{{ item.id }}">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Create your trading account</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>The current buying price for this contract is {{ item.last_bid }}ETH.</p>
+                                                <p>If someone decides to snatch the contract away from you, you will be paid {{ item.last_bid|multiply:multiplier }}ETH</p>
+                                                <p>Transactions on the blockChain take time to process. By the time you buy this contract, it's price may already be higher than is shown on the card and your transaction will fail.</p>
+                                                <a href="https://metamask.io" target="_blank" title="Install Metamask" rel="noopener noreferrer" style="width: 100%; display: inline-block;">
+                                                    <img width="300" height="50" src="{% static 'website/assets/img/metamask-pay.png' %}" alt="Metamask download">
+                                                </a>
+                                                <i>If someone else outbid you during this time, your ETH will be refunded.</i>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-dismiss="modal">&times;</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <h3>No {{ text_s }} Available</h3>
+                        {% endif %}
+                        </div>
+                    </div><!--tab-pane end-->
+                </div><!--tab-content end-->
+            </div>
+        </div><!--magazi-list-view end-->
+    </main>
+
+{% endblock %}
