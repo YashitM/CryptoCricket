@@ -52,66 +52,6 @@
                                         <li><a href="{% url 'owners' %}" title="">Team Owners</a></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#">Portfolio</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="portfolio-masonary.html" title="">Portfolio Masonary</a></li>
-                                        <li><a href="portfolio-masonary-slider.html" title="">Masonary with Slider</a></li>
-                                        <li><a href="portfolio-slider.html" title="">Portfolio Slider</a></li>
-                                        <li><a href="portfolio-single-page.html" title="">Portfolio Single Page</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Pages <small>+</small></a>
-                                    <div class="mega-menu">
-                                        <div class="row">
-                                            <div class="col-lg-3 col-md-3">
-                                                <div class="menu-lst">
-                                                    <ul>
-                                                        <li><h3>Gallery</h3></li>
-                                                        <li><a href="gallery-two-column.html" title="">2 Columns</a></li>
-                                                        <li><a href="gallery-two-column-masonary.html" title="">2 Columns Masonary</a></li>
-                                                        <li><a href="gallery-three-column.html" title="">3 Columns</a></li>
-                                                        <li><a href="gallery-three-column-masonary.html" title="">3 Columns Masonary</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-3">
-                                                <div class="menu-lst">
-                                                    <ul>
-                                                        <li><h3>Contact Us</h3></li>
-                                                        <li><a href="contact-us-v1.html" title="">Contact Us Version 1</a></li>
-                                                        <li><a href="contact-us-v2.html" title="">Contact Us Version 2</a></li>
-                                                        <li><a href="contact-us-v3.html" title="">Contact Us Version 3</a></li>
-                                                        <li><a href="contact-us-v4.html" title="">Contact Us Version 4</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 col-md-3">
-                                                <div class="menu-lst">
-                                                    <ul>
-                                                        <li><h3>Other Pages</h3></li>
-                                                        <li><a href="login-register.html" title="">Login/Register</a></li>
-                                                        <li><a href="404.html" title="">404 Error</a></li>
-                                                        <li><a href="about-us.html" title="">About Us</a></li>
-                                                        <li><a href="comingsoon.html" title="">Coming Soon</a></li>
-                                                        <li><a href="price.html" title="">Pricing Plans</a></li>
-                                                        <li><a href="order-tracking.html" title="">Order Tracking</a></li>
-                                                        <li><a href="shortcodes.html" title="">Shortcodes</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-3">
-                                                <div class="menu-lst more-wdth">
-                                                    <img src="assets/img/menu-img.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
                                 {% if user.is_authenticated %}
                                 <li>
                                     <a href="#">{{ user.username }}</a>
@@ -130,18 +70,6 @@
                                 {% endif %}
                             </ul>
                             <ul class="magazi-menu-2 list-none pull-right">
-                                <li>
-                                    <a href="#" class="wishlist-menu-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 51.997 51.997" xml:space="preserve" width="21px" height="21px"><g><path d="M51.911,16.242C51.152,7.888,45.239,1.827,37.839,1.827c-4.93,0-9.444,2.653-11.984,6.905 c-2.517-4.307-6.846-6.906-11.697-6.906c-7.399,0-13.313,6.061-14.071,14.415c-0.06,0.369-0.306,2.311,0.442,5.478 c1.078,4.568,3.568,8.723,7.199,12.013l18.115,16.439l18.426-16.438c3.631-3.291,6.121-7.445,7.199-12.014 C52.216,18.553,51.97,16.611,51.911,16.242z M49.521,21.261c-0.984,4.172-3.265,7.973-6.59,10.985L25.855,47.481L9.072,32.25 c-3.331-3.018-5.611-6.818-6.596-10.99c-0.708-2.997-0.417-4.69-0.416-4.701l0.015-0.101C2.725,9.139,7.806,3.826,14.158,3.826 c4.687,0,8.813,2.88,10.771,7.515l0.921,2.183l0.921-2.183c1.927-4.564,6.271-7.514,11.069-7.514 c6.351,0,11.433,5.313,12.096,12.727C49.938,16.57,50.229,18.264,49.521,21.261z" fill="#bababa"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-                                        <span>0</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="cart-menu-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 489 489" xml:space="preserve" width="21px" height="21px"><g><path d="M440.1,422.7l-28-315.3c-0.6-7-6.5-12.3-13.4-12.3h-57.6C340.3,42.5,297.3,0,244.5,0s-95.8,42.5-96.6,95.1H90.3 c-7,0-12.8,5.3-13.4,12.3l-28,315.3c0,0.4-0.1,0.8-0.1,1.2c0,35.9,32.9,65.1,73.4,65.1h244.6c40.5,0,73.4-29.2,73.4-65.1 C440.2,423.5,440.2,423.1,440.1,422.7z M244.5,27c37.9,0,68.8,30.4,69.6,68.1H174.9C175.7,57.4,206.6,27,244.5,27z M366.8,462 H122.2c-25.4,0-46-16.8-46.4-37.5l26.8-302.3h45.2v41c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h139.3v41 c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z" fill="#bababa"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-                                        <span>1</span>
-                                    </a>
-                                </li>
                                 <li>
                                     <a href="#" class="search-btnn">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  x="0px" y="0px" viewBox="0 0 56.966 56.966" xml:space="preserve" width="21px" height="21px"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23 s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92 c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17 s-17-7.626-17-17S14.61,6,23.984,6z" fill="#bababa"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
