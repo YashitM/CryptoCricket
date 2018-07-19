@@ -1,8 +1,12 @@
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect, get_object_or_404
 
-from website.models import Profile, Player, ICC, Country, Tournament, CricketBoard, TeamOwner
+from website.models import Profile, Player, Card
 from .forms import RegisterForm, LoginForm
+
+
+text_s = ["Player", "Owner", "Tournament", "Board", "Country", "ICC"]
+text_p = ["Players", "Owners", "Tournaments", "Boards", "Countries", "ICCs"]
 
 
 def home(request):
@@ -68,88 +72,52 @@ def logout_user(request):
     return render(request, 'website/index.html', context=None)
 
 
-def marketplace_iccs(request):
-    all_iccs = ICC.objects.all()
-    text_s = "ICC"
-    text_p = "ICC"
-    return render(request, 'website/marketplace.html', {'items': all_iccs, 'text_s': text_s, 'text_p': text_p})
-
-
-def marketplace_countries(request):
-    all_countries = Country.objects.all()
-    text_s = "Country"
-    text_p = "Countries"
-    return render(request, 'website/marketplace.html', {'items': all_countries, 'text_s': text_s, 'text_p': text_p})
+# MARKETPLACE
 
 
 def marketplace_players(request):
     all_players = Player.objects.all()
-    text_s = "Player"
-    text_p = "Players"
-    return render(request, 'website/marketplace.html', {'items': all_players, 'text_s': text_s, 'text_p': text_p})
-
-
-def marketplace_tournaments(request):
-    all_tournaments = Tournament.objects.all()
-    text_s = "Tournament"
-    text_p = "Tournaments"
-    return render(request, 'website/marketplace.html', {'items': all_tournaments, 'text_s': text_s, 'text_p': text_p})
-
-
-def marketplace_boards(request):
-    all_boards = CricketBoard.objects.all()
-    text_s = "Board"
-    text_p = "Boards"
-    return render(request, 'website/marketplace.html', {'items': all_boards, 'text_s': text_s, 'text_p': text_p})
+    return render(request, 'website/marketplace.html', {'items': all_players, 'text_s': text_s[0], 'text_p': text_p[0]})
 
 
 def marketplace_team_owners(request):
-    all_owners = TeamOwner.objects.all()
-    text_s = "Owner"
-    text_p = "Owners"
-    return render(request, 'website/marketplace.html', {'items': all_owners, 'text_s': text_s, 'text_p': text_p})
+    all_owners = Card.objects.all().filter(card_type=text_s[1])
+    return render(request, 'website/marketplace.html', {'items': all_owners, 'text_s': text_s[1], 'text_p': text_p[1]})
+
+
+def marketplace_tournaments(request):
+    all_tournaments = Card.objects.all().filter(card_type=text_s[2])
+    return render(request, 'website/marketplace.html', {'items': all_tournaments, 'text_s': text_s[2], 'text_p': text_p[2]})
+
+
+def marketplace_boards(request):
+    all_boards =Card.objects.all().filter(card_type=text_s[3])
+    return render(request, 'website/marketplace.html', {'items': all_boards, 'text_s': text_s[3], 'text_p': text_p[3]})
+
+
+def marketplace_countries(request):
+    all_countries = Card.objects.all().filter(card_type=text_s[4])
+    return render(request, 'website/marketplace.html', {'items': all_countries, 'text_s': text_s[4], 'text_p': text_p[4]})
+
+
+def marketplace_iccs(request):
+    all_iccs = Card.objects.all().filter(card_type=text_s[5])
+    return render(request, 'website/marketplace.html', {'items': all_iccs, 'text_s': text_s[5], 'text_p': text_p[5]})
+
+
+# CARD DETAILS
 
 
 def player_details(request, item_id):
     selected_item = get_object_or_404(Player, pk=item_id)
-    text_s = "Player"
-    text_p = "Players"
-    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
+    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s[0], 'text_p': text_p[0]})
 
 
-def country_details(request, item_id):
-    selected_item = get_object_or_404(Country, pk=item_id)
-    text_s = "Country"
-    text_p = "Countries"
-    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
-
-
-def owner_details(request, item_id):
-    selected_item = get_object_or_404(TeamOwner, pk=item_id)
-    text_s = "Owner"
-    text_p = "Owners"
-    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
-
-
-def board_details(request, item_id):
-    selected_item = get_object_or_404(CricketBoard, pk=item_id)
-    text_s = "Board"
-    text_p = "Boards"
-    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
-
-
-def icc_details(request, item_id):
-    selected_item = get_object_or_404(ICC, pk=item_id)
-    text_s = "Board"
-    text_p = "Boards"
-    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
-
-
-def tournament_details(request, item_id):
-    selected_item = get_object_or_404(Tournament, pk=item_id)
-    text_s = "Board"
-    text_p = "Boards"
-    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s, 'text_p': text_p})
+def card_details(request, item_id):
+    selected_item = get_object_or_404(Card, pk=item_id)
+    card_type = selected_item.card_type
+    index = text_s.index(card_type)
+    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s[index], 'text_p': text_p[index]})
 
 
 def successful_transaction(request, item_id, current_bid, item_type):
@@ -157,17 +125,9 @@ def successful_transaction(request, item_id, current_bid, item_type):
     current_user = request.user
 
     if item_type == "Player":
-        selected_item = Player.objects.get(pk=item_id)
-    elif item_type == "Board":
-        selected_item = CricketBoard.objects.get(pk=item_id)
-    elif item_type == "Country":
-        selected_item = Country.objects.get(pk=item_id)
-    elif item_type == "Owner":
-        selected_item = TeamOwner.objects.get(pk=item_id)
-    elif item_type == "Tournament":
-        selected_item = Tournament.objects.get(pk=item_id)
-    elif item_type == "ICC":
-        selected_item = ICC.objects.get(pk=item_id)
+        selected_item = get_object_or_404(Player, pk=item_id)
+    else:
+        selected_item = get_object_or_404(Card, pk=item_id)
 
     selected_item.last_bid = current_bid
     selected_item.owner = current_user

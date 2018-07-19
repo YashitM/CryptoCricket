@@ -12,11 +12,7 @@
                     <li><a href="#" title=""><i class="fa fa-home"></i></a></li>
                     <li><span>Marketplace</span></li>
                     <li><a href="{% url text_p|lower %}" title="">{{ text_p }}</a></li>
-                    {% if text_p == text_s %}
-                        <li><a href="{% url text_s|lower item_id=item.id %}" title="">{{ item.board_name }}</a></li>
-                    {% else %}
-                        <li><a href="{% url text_s|lower item_id=item.id %}" title="">{{ item.name }}</a></li>
-                    {% endif %}
+                    <li><a href="{% url text_s|lower item_id=item.id %}" title="">{{ item.name }}</a></li>
                 </ul>
             </div>
         </div>
@@ -40,11 +36,7 @@
                     {% endif %}
                     <div class="col-md-5">
                         <div class="magazi-data-details">
-                            {% if text_s == text_p %}
-                                <h2>{{ item.board_name }}</h2>
-                            {% else %}
-                                <h2>{{ item.name }}</h2>
-                            {% endif %}
+                            <h2>{{ item.name }}</h2>
                             <span>{{ item.last_bid }}</span>&nbsp;ETH
                             <p class="margin-bottom-0">Transactions:&nbsp;<span>{{ item.transactions }}</span></p>
                             {% if item.owner %}
@@ -133,23 +125,6 @@
                 </div><!--magazi-tabs-details end-->
             </div>
         </div><!--magazi-details-tab end-->
-
-        <div class="magazi-pages-control">
-            <div class="magazi-prev">
-                <a href="#" title="">Previous Item</a>
-                <div class="magazi-suggester-pro">
-                    <img src="assets/img/camera.png" alt="">
-                    <h4>Nikon DSLR Camera</h4>
-                </div>
-            </div>
-            <div class="magazi-next">
-                <a href="#" title="">Next Item</a>
-                <div class="magazi-suggester-pro">
-                    <img src="assets/img/camera.png" alt="">
-                    <h4>Nikon DSLR Camera</h4>
-                </div>
-            </div>
-        </div>
     </main>
 
 {% endblock %}

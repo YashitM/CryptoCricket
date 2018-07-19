@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Country, CricketBoard, ICC, Player, TeamOwner, Tournament
+from .models import Card, Player
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import User
 
@@ -21,9 +21,5 @@ class UserAdmin(BaseUserAdmin):
 admin.site.unregister(User)
 admin.site.register(User, UserAdmin)
 
-admin.site.register(Country)
-admin.site.register(CricketBoard)
-admin.site.register(ICC)
+admin.site.register(Card)
 admin.site.register(Player)
-admin.site.register(Tournament)
-admin.site.register(TeamOwner)

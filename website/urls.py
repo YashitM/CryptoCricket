@@ -24,11 +24,11 @@ urlpatterns = [
     # Details URLs
 
     path('players/<int:item_id>', views.player_details, name='player'),
-    path('countries/<int:item_id>', views.country_details, name='country'),
-    path('owners/<int:item_id>', views.owner_details, name='owner'),
-    path('boards/<int:item_id>', views.board_details, name='board'),
-    path('iccs/<int:item_id>', views.icc_details, name='icc'),
-    path('tournaments/<int:item_id>', views.tournament_details, name='tournament'),
+    path('countries/<int:item_id>', views.card_details, name='country'),
+    path('owners/<int:item_id>', views.card_details, name='owner'),
+    path('boards/<int:item_id>', views.card_details, name='board'),
+    path('iccs/<int:item_id>', views.card_details, name='icc'),
+    path('tournaments/<int:item_id>', views.card_details, name='tournament'),
 
 
 ]

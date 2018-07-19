@@ -2,56 +2,36 @@ from django.contrib.auth.models import User
 from django.db import models
 
 
-class Player(models.Model):
+class Card(models.Model):
     name = models.CharField(max_length=100, null=False)
+    description = models.TextField(max_length=3000)
     transactions = 0
+    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
+    last_bid = models.FloatField(default=0)
+    eth_id = models.IntegerField(null=True, blank=True)
+
+    CARD_TYPES = (
+        ("Player", 'Player'),
+        ("Owner", 'Owner'),
+        ("Tournament", 'Tournament'),
+        ("Board", 'Board'),
+        ("Country", 'Country'),
+        ("ICC", 'ICC'),
+
+    )
+
+    card_type = models.CharField(
+        max_length=11,
+        choices=CARD_TYPES,
+        default="Player"
+    )
+
+
+class Player(Card):
     icc_ranking = models.IntegerField()
     country = models.CharField(max_length=100, null=False)
     ipl_team = models.CharField(max_length=100, null=True)
-    last_bid = models.FloatField()
     image = models.ImageField(null=True, blank=True)
-    description = models.TextField(max_length=3000)
-    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
-
-
-class TeamOwner(models.Model):
-    name = models.CharField(max_length=100, null=False)
-    description = models.TextField(max_length=3000)
-    last_bid = models.FloatField(default=0)
-    transactions = 0
-    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
-
-
-class Tournament(models.Model):
-    name = models.CharField(max_length=100, null=False)
-    description = models.TextField(max_length=3000)
-    last_bid = models.FloatField()
-    transactions = 0
-    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
-
-
-class CricketBoard(models.Model):
-    name = models.CharField(max_length=100, null=False)
-    description = models.TextField(max_length=3000)
-    last_bid = models.FloatField()
-    transactions = 0
-    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
-
-
-class Country(models.Model):
-    name = models.CharField(max_length=100, null=False)
-    description = models.TextField(max_length=3000)
-    last_bid = models.FloatField()
-    transactions = 0
-    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
-
-
-class ICC(models.Model):
-    board_name = models.CharField(max_length=100, null=False)
-    description = models.TextField(max_length=3000)
-    last_bid = models.FloatField()
-    transactions = 0
-    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
 
 
 class Profile(models.Model):
