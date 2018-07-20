@@ -1,7 +1,7 @@
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect, get_object_or_404
 
-from website.models import Profile, Player, Card
+from website.models import Profile, Card
 from .forms import RegisterForm, LoginForm
 
 text_s = ["Player", "Owner", "Tournament", "Board", "Country", "ICC"]
@@ -9,7 +9,7 @@ text_p = ["Players", "Owners", "Tournaments", "Boards", "Countries", "ICCs"]
 
 
 def home(request):
-    all_players = Player.objects.all()
+    all_players = Card.objects.all().filter(card_type=text_s[0])
     all_owners = Card.objects.all().filter(card_type=text_s[1])
     all_tournaments = Card.objects.all().filter(card_type=text_s[2])
     all_boards = Card.objects.all().filter(card_type=text_s[3])
@@ -92,7 +92,7 @@ def logout_user(request):
 
 
 def marketplace_players(request):
-    all_players = Player.objects.all()
+    all_players = Card.objects.all().filter(card_type=text_s[0])
     return render(request, 'website/marketplace.html', {'items': all_players, 'text_s': text_s[0], 'text_p': text_p[0]})
 
 
@@ -124,12 +124,6 @@ def marketplace_iccs(request):
 
 
 # CARD DETAILS
-
-
-def player_details(request, item_id):
-    selected_item = get_object_or_404(Player, pk=item_id)
-    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s[0], 'text_p': text_p[0]})
-
 
 def card_details(request, item_id):
     selected_item = get_object_or_404(Card, pk=item_id)

@@ -140,32 +140,35 @@
     </section><!--main-slider end-->
 
     <main>
-        <div class="magazi-section-title text-center margin-top-100 margin-bottom-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h3>Buy Players</h3>
+
+        {% if players %}
+            <div class="magazi-section-title text-center margin-top-100 margin-bottom-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3>Buy Players</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        {% if players %}
             <div class="section-slick-slider padding-bottom-50">
                 <div class="container">
                     <div class="magazi-carousel">
-                        {% for player in players %}
+                        {% for item in players %}
                             <div class="col-md-3 col-sm-6 col-xs-12 magazi-product text-center">
                                 <div class="magazi-product-inner">
-                                    <div class="magazi-product-thumb">
-                                        <img width="150" height="150" src="{{ player.image.url }}" alt="product-3" />
-                                        <a href="#" class="magazi-overlay"></a>
-                                    </div>
+                                    {% if item.image %}
+                                        <div class="magazi-product-thumb">
+                                            <img width="150" height="150" src="{{ item.image.url }}" alt="product-3" />
+                                            <a href="#" class="magazi-overlay"></a>
+                                        </div>
+                                    {% endif %}
                                     <div class="magazi-product-detail">
                                         <h1>
-                                            <a href="#">{{ player.name }}</a>
+                                            <a href="#">{{ item.name }}</a>
                                         </h1>
                                         <p>
-                                            <span>{{ player.last_bid }}&nbsp;ETH</span>
+                                            <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
                                     </div>
                                 </div>
@@ -186,18 +189,24 @@
                     </div>
                 </div>
             </div>
-            <div class="section-slick-slider padding-bottom-100">
+            <div class="section-slick-slider padding-bottom-50">
                 <div class="container">
                     <div class="magazi-carousel">
-                        {% for owner in owners %}
+                        {% for item in owners %}
                             <div class="col-md-3 col-sm-6 col-xs-12 magazi-product text-center">
                                 <div class="magazi-product-inner">
+                                    {% if item.image %}
+                                        <div class="magazi-product-thumb">
+                                            <img width="150" height="150" src="{{ item.image.url }}" alt="product-3" />
+                                            <a href="#" class="magazi-overlay"></a>
+                                        </div>
+                                    {% endif %}
                                     <div class="magazi-product-detail">
                                         <h1>
-                                            <a href="#">{{ owner.name }}</a>
+                                            <a href="#">{{ item.name }}</a>
                                         </h1>
                                         <p>
-                                            <span>{{ owner.last_bid }}&nbsp;ETH</span>
+                                            <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
                                     </div>
                                 </div>
@@ -218,18 +227,24 @@
                     </div>
                 </div>
             </div>
-            <div class="section-slick-slider padding-bottom-100">
+            <div class="section-slick-slider padding-bottom-50">
                 <div class="container">
                     <div class="magazi-carousel">
-                        {% for tournament in tournaments %}
+                        {% for item in tournaments %}
                             <div class="col-md-3 col-sm-6 col-xs-12 magazi-product text-center">
                                 <div class="magazi-product-inner">
+                                    {% if item.image %}
+                                        <div class="magazi-product-thumb">
+                                            <img width="150" height="150" src="{{ item.image.url }}" alt="product-3" />
+                                            <a href="#" class="magazi-overlay"></a>
+                                        </div>
+                                    {% endif %}
                                     <div class="magazi-product-detail">
                                         <h1>
-                                            <a href="#">{{ tournament.name }}</a>
+                                            <a href="#">{{ item.name }}</a>
                                         </h1>
                                         <p>
-                                            <span>{{ tournament.last_bid }}&nbsp;ETH</span>
+                                            <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
                                     </div>
                                 </div>
@@ -250,18 +265,24 @@
                     </div>
                 </div>
             </div>
-            <div class="section-slick-slider padding-bottom-100">
+            <div class="section-slick-slider padding-bottom-50">
                 <div class="container">
                     <div class="magazi-carousel">
-                        {% for board in boards %}
+                        {% for item in boards %}
                             <div class="col-md-3 col-sm-6 col-xs-12 magazi-product text-center">
                                 <div class="magazi-product-inner">
+                                    {% if item.image %}
+                                        <div class="magazi-product-thumb">
+                                            <img width="150" height="150" src="{{ item.image.url }}" alt="product-3" />
+                                            <a href="#" class="magazi-overlay"></a>
+                                        </div>
+                                    {% endif %}
                                     <div class="magazi-product-detail">
                                         <h1>
-                                            <a href="#">{{ board.name }}</a>
+                                            <a href="#">{{ item.name }}</a>
                                         </h1>
                                         <p>
-                                            <span>{{ board.last_bid }}&nbsp;ETH</span>
+                                            <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
                                     </div>
                                 </div>
@@ -282,18 +303,24 @@
                     </div>
                 </div>
             </div>
-            <div class="section-slick-slider padding-bottom-100">
+            <div class="section-slick-slider padding-bottom-50">
                 <div class="container">
                     <div class="magazi-carousel">
-                        {% for country in countries %}
+                        {% for item in countries %}
                             <div class="col-md-3 col-sm-6 col-xs-12 magazi-product text-center">
                                 <div class="magazi-product-inner">
+                                    {% if item.image %}
+                                        <div class="magazi-product-thumb">
+                                            <img width="150" height="150" src="{{ item.image.url }}" alt="product-3" />
+                                            <a href="#" class="magazi-overlay"></a>
+                                        </div>
+                                    {% endif %}
                                     <div class="magazi-product-detail">
                                         <h1>
-                                            <a href="#">{{ country.name }}</a>
+                                            <a href="#">{{ item.name }}</a>
                                         </h1>
                                         <p>
-                                            <span>{{ country.last_bid }}&nbsp;ETH</span>
+                                            <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
                                     </div>
                                 </div>
@@ -309,23 +336,29 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h3>Buy ICC</h3>
+                            <h3>Buy ICCs</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section-slick-slider padding-bottom-100">
+            <div class="section-slick-slider padding-bottom-50">
                 <div class="container">
                     <div class="magazi-carousel">
-                        {% for icc in iccs %}
+                        {% for item in iccs %}
                             <div class="col-md-3 col-sm-6 col-xs-12 magazi-product text-center">
                                 <div class="magazi-product-inner">
+                                    {% if item.image %}
+                                        <div class="magazi-product-thumb">
+                                            <img width="150" height="150" src="{{ item.image.url }}" alt="product-3" />
+                                            <a href="#" class="magazi-overlay"></a>
+                                        </div>
+                                    {% endif %}
                                     <div class="magazi-product-detail">
                                         <h1>
-                                            <a href="#">{{ icc.name }}</a>
+                                            <a href="#">{{ item.name }}</a>
                                         </h1>
                                         <p>
-                                            <span>{{ icc.last_bid }}&nbsp;ETH</span>
+                                            <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
                                     </div>
                                 </div>

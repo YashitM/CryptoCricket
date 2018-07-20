@@ -23,7 +23,7 @@ urlpatterns = [
 
     # Details URLs
 
-    path('players/<int:item_id>', views.player_details, name='player'),
+    path('players/<int:item_id>', views.card_details, name='player'),
     path('countries/<int:item_id>', views.card_details, name='country'),
     path('owners/<int:item_id>', views.card_details, name='owner'),
     path('boards/<int:item_id>', views.card_details, name='board'),

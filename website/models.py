@@ -8,7 +8,11 @@ class Card(models.Model):
     transactions = 0
     owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
     last_bid = models.FloatField(default=0)
-    eth_id = models.IntegerField(null=True, blank=True)
+    eth_id = models.IntegerField(null=True, blank=True, editable=False)
+    image = models.ImageField(null=True, blank=True)
+    icc_ranking = models.IntegerField(blank=True, null=True)
+    country = models.CharField(max_length=100, null=True, blank=True)
+    ipl_team = models.CharField(max_length=100, null=True, blank=True)
 
     CARD_TYPES = (
         ("Player", 'Player'),
@@ -30,15 +34,11 @@ class Card(models.Model):
         return self.card_type + ": " + self.name
 
 
-class Player(Card):
-    icc_ranking = models.IntegerField()
-    country = models.CharField(max_length=100, null=False)
-    ipl_team = models.CharField(max_length=100, null=True)
-    image = models.ImageField(null=True, blank=True)
-
-
 class Profile(models.Model):
     user = models.OneToOneField(User, unique=True, on_delete=models.CASCADE, related_name='user_profile')
     eth_address = models.CharField(max_length=30, null=False, blank=False)
     last_bid = models.FloatField()
     transactions = 0
+
+    def __str__(self):
+        return self.user.first_name + " " + self.user.last_name
