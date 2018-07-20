@@ -1,5 +1,6 @@
 {% extends 'website/base.html' %}
 {% load staticfiles %}
+{% load custom_tags %}
 
 {% block content %}
 
@@ -170,6 +171,9 @@
                                         <p>
                                             <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
+                                        <div class="buy">
+                                            <a style="list-style-type: none; color: black;" href="{% url "player" item_id=item.id %}"><span>About</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -208,6 +212,9 @@
                                         <p>
                                             <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
+                                        <div class="buy">
+                                            <a style="list-style-type: none; color: black;" href="{% url "owner" item_id=item.id %}"><span>About</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -246,6 +253,9 @@
                                         <p>
                                             <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
+                                        <div class="buy">
+                                            <a style="list-style-type: none; color: black;" href="{% url "tournament" item_id=item.id %}"><span>About</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -284,6 +294,9 @@
                                         <p>
                                             <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
+                                        <div class="buy">
+                                            <a style="list-style-type: none; color: black;" href="{% url "board" item_id=item.id %}"><span>About</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -322,6 +335,9 @@
                                         <p>
                                             <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
+                                        <div class="buy">
+                                            <a style="list-style-type: none; color: black;" href="{% url "country" item_id=item.id %}"><span>About</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -360,6 +376,9 @@
                                         <p>
                                             <span>{{ item.last_bid }}&nbsp;ETH</span>
                                         </p>
+                                        <div class="buy">
+                                            <a style="list-style-type: none; color: black;" href="{% url "icc" item_id=item.id %}"><span>About</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

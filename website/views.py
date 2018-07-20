@@ -17,13 +17,13 @@ def home(request):
     all_iccs = Card.objects.all().filter(card_type=text_s[5])
 
     context = {
-        "players": all_players,
-        "owners": all_owners,
-        "tournaments": all_tournaments,
-        "boards": all_boards,
-        "countries": all_countries,
-        "iccs": all_iccs,
-        "categories": text_p,
+        "players": all_players[:5],
+        "owners": all_owners[:5],
+        "tournaments": all_tournaments[:5],
+        "boards": all_boards[:5],
+        "countries": all_countries[:5],
+        "iccs": all_iccs[:5],
+        "categories": text_p[:5],
     }
 
     return render(request, 'website/index.html', context)
@@ -133,14 +133,10 @@ def card_details(request, item_id):
                   {'item': selected_item, 'text_s': text_s[index], 'text_p': text_p[index]})
 
 
-def successful_transaction(request, item_id, current_bid, item_type):
-    global selected_item
+def successful_transaction(request, item_id, current_bid):
     current_user = request.user
 
-    if item_type == "Player":
-        selected_item = get_object_or_404(Player, pk=item_id)
-    else:
-        selected_item = get_object_or_404(Card, pk=item_id)
+    selected_item = get_object_or_404(Card, pk=item_id)
 
     selected_item.last_bid = current_bid
     selected_item.owner = current_user

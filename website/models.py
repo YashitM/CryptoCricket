@@ -31,8 +31,6 @@ class Card(models.Model):
     country = models.CharField(max_length=100, null=True, blank=True)
     ipl_team = models.CharField(max_length=100, null=True, blank=True)
 
-
-
     def __str__(self):
         return self.card_type + ": " + self.name
 

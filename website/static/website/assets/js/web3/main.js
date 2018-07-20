@@ -1,4 +1,4 @@
-$("[id*='buy_now']") .click( function(e) {
+$("[id*='buy_now']").click( function(e) {
     e.preventDefault();
     var pressed_element = this.id;
     pressed_element = pressed_element.substring(7);
