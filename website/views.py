@@ -4,13 +4,29 @@ from django.shortcuts import render, redirect, get_object_or_404
 from website.models import Profile, Player, Card
 from .forms import RegisterForm, LoginForm
 
-
 text_s = ["Player", "Owner", "Tournament", "Board", "Country", "ICC"]
 text_p = ["Players", "Owners", "Tournaments", "Boards", "Countries", "ICCs"]
 
 
 def home(request):
-    return render(request, 'website/index.html', context=None)
+    all_players = Player.objects.all()
+    all_owners = Card.objects.all().filter(card_type=text_s[1])
+    all_tournaments = Card.objects.all().filter(card_type=text_s[2])
+    all_boards = Card.objects.all().filter(card_type=text_s[3])
+    all_countries = Card.objects.all().filter(card_type=text_s[4])
+    all_iccs = Card.objects.all().filter(card_type=text_s[5])
+
+    context = {
+        "players": all_players,
+        "owners": all_owners,
+        "tournaments": all_tournaments,
+        "boards": all_boards,
+        "countries": all_countries,
+        "iccs": all_iccs,
+        "categories": text_p,
+    }
+
+    return render(request, 'website/index.html', context)
 
 
 def register(request):
@@ -87,17 +103,19 @@ def marketplace_team_owners(request):
 
 def marketplace_tournaments(request):
     all_tournaments = Card.objects.all().filter(card_type=text_s[2])
-    return render(request, 'website/marketplace.html', {'items': all_tournaments, 'text_s': text_s[2], 'text_p': text_p[2]})
+    return render(request, 'website/marketplace.html',
+                  {'items': all_tournaments, 'text_s': text_s[2], 'text_p': text_p[2]})
 
 
 def marketplace_boards(request):
-    all_boards =Card.objects.all().filter(card_type=text_s[3])
+    all_boards = Card.objects.all().filter(card_type=text_s[3])
     return render(request, 'website/marketplace.html', {'items': all_boards, 'text_s': text_s[3], 'text_p': text_p[3]})
 
 
 def marketplace_countries(request):
     all_countries = Card.objects.all().filter(card_type=text_s[4])
-    return render(request, 'website/marketplace.html', {'items': all_countries, 'text_s': text_s[4], 'text_p': text_p[4]})
+    return render(request, 'website/marketplace.html',
+                  {'items': all_countries, 'text_s': text_s[4], 'text_p': text_p[4]})
 
 
 def marketplace_iccs(request):
@@ -117,7 +135,8 @@ def card_details(request, item_id):
     selected_item = get_object_or_404(Card, pk=item_id)
     card_type = selected_item.card_type
     index = text_s.index(card_type)
-    return render(request, 'website/details.html', {'item': selected_item, 'text_s': text_s[index], 'text_p': text_p[index]})
+    return render(request, 'website/details.html',
+                  {'item': selected_item, 'text_s': text_s[index], 'text_p': text_p[index]})
 
 
 def successful_transaction(request, item_id, current_bid, item_type):
@@ -132,5 +151,3 @@ def successful_transaction(request, item_id, current_bid, item_type):
     selected_item.last_bid = current_bid
     selected_item.owner = current_user
     selected_item.save()
-
-

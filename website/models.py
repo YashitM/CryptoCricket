@@ -26,6 +26,9 @@ class Card(models.Model):
         default="Player"
     )
 
+    def __str__(self):
+        return self.card_type + ": " + self.name
+
 
 class Player(Card):
     icc_ranking = models.IntegerField()
