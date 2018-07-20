@@ -1,10 +1,8 @@
 var $ = django.jQuery;
+$(".deletelink").hide();
 
-var selection = $("#id_card_type :selected").text();
-
-$('#id_card_type').change(function() {
-    updated_selection = $(this).val();
-    if(updated_selection !== "Player") {
+function hide_unhide(selection) {
+    if(selection !== "Player") {
         $(".field-icc_ranking").hide();
         $(".field-country").hide();
         $(".field-ipl_team").hide();
@@ -14,6 +12,13 @@ $('#id_card_type').change(function() {
         $(".field-country").show();
         $(".field-ipl_team").show();
     }
+}
+
+hide_unhide($("#id_card_type :selected").text());
+
+
+$('#id_card_type').change(function() {
+    hide_unhide($(this).val());
 });
 
 
