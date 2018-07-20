@@ -37,7 +37,8 @@ function addNewCard(cardName, cardID)
 	var myEvent = cryptoCricketInstance.LogBirth({},{fromBlock: 0, toBlock: 'latest'});
 	if(currentAcc !== ceoAcc)
 	{
-        alert("Login from admin account.");
+		// show popup asking user to login from admin account
+        alert("Login from admin account");
 		return;
 	}
 	else
@@ -54,6 +55,7 @@ function addNewCard(cardName, cardID)
 		      console.log(JSON.stringify(result.args.tokenId));
 		      console.log(JSON.stringify(result.args.name));
 		      console.log(JSON.stringify(result.args.Price));
+              document.getElementById("card_form").submit();
 		    });
 		  }
 		})
@@ -76,9 +78,8 @@ $('input[name="_save"]').click(function(event) {
 
     if(id && cardName) {
         event.preventDefault();
-        document.getElementsByName("_save")[0].disabled = true;
+        document.getElementsByName("_save")[0].disabled = false;
 
         addNewCard(cardName, id);
-        document.getElementById("card_form").submit();
     }
 });

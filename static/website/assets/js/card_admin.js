@@ -1,5 +1,7 @@
 var $ = django.jQuery;
 $(".deletelink").hide();
+$('[name="_addanother"]').hide();
+$('[name="_continue"]').hide();
 
 function hide_unhide(selection) {
     if(selection !== "Player") {
