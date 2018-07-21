@@ -3,6 +3,7 @@
 // @param price: integer: selling price of the card to be bought
 function buyCard(tokenID, price)
 {
+    console.log("LDJkhfksjhd");
 	var myEvent = cryptoCricketInstance.LogSnatch({},{fromBlock: web3.eth.getBlockNumber(function(error, result){ console.log(result)}), toBlock: 'latest'});
 
 	cryptoCricketInstance.purchase(tokenID, {value: web3.toWei(price, "ether")}, function(error,result)

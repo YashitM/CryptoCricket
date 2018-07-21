@@ -84,7 +84,7 @@ $('input[name="_save"]').click(function(event) {
 
 	if(id && cardName) {
 		event.preventDefault();
-		document.getElementsByName("_save")[0].disabled = true;
+		$('[name="_save"]').hide();
 
 		addNewCard(cardName, id);
 	}
