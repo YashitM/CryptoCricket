@@ -39,11 +39,7 @@
                             <h2>{{ item.name }}</h2>
                             <span>{{ item.last_bid }}</span>&nbsp;ETH
                             <p class="margin-bottom-0">Transactions:&nbsp;<span>{{ item.transactions }}</span></p>
-                            {% if item.owner %}
-                                <p class="margin-bottom-50">Owner:&nbsp;<span>{{ item.owner }}</span> </p>
-                            {% else %}
-                                <p class="margin-bottom-50">Owner:&nbsp;<span>Unassigned</span></p>
-                            {% endif %}
+                            <p class="margin-bottom-50">Owner:&nbsp;<span>{{ item.owner }}</span> </p>
                             <div class="handler-cart">
                                 <div class="add-to-cart">
                                     {% if user.is_authenticated %}

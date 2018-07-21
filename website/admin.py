@@ -22,7 +22,7 @@ class UserAdmin(BaseUserAdmin):
 class CardAdminForm(forms.ModelForm):
     class Meta:
         model = Card
-        fields = '__all__'
+        exclude = ('owner', 'last_bid',)
 
     def clean(self):
         card_type = self.cleaned_data.get('card_type')
@@ -39,8 +39,20 @@ class CardAdminForm(forms.ModelForm):
         return self.cleaned_data
 
 
+# 0-Board; 1-Country; 2-Rest
 class CardAdmin(admin.ModelAdmin):
     form = CardAdminForm
+
+    def save_model(self, request, obj, form, change):
+        card_type = form.cleaned_data['card_type']
+        if card_type == "Board":
+            obj.last_bid = 0.005
+        elif card_type == "Country":
+            obj.last_bid = 0.007
+        else:
+            obj.last_bid = 0.005
+
+        super().save_model(request, obj, form, change)
 
 
 admin.site.unregister(User)

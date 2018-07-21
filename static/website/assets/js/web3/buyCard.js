@@ -4,7 +4,7 @@
 function buyCard(tokenID, price)
 {
 	var myEvent = cryptoCricketInstance.LogSnatch({},{fromBlock: web3.eth.getBlockNumber(function(error, result){ console.log(result)}), toBlock: 'latest'});
-	
+
 	cryptoCricketInstance.purchase(tokenID, {value: web3.toWei(price, "ether")}, function(error,result)
 	{
 		if(error)
@@ -13,7 +13,7 @@ function buyCard(tokenID, price)
 		{
 			myEvent.watch(function(error, result)
 			{
-				console.log("Bought Card Successfully"); 
+				console.log("Bought Card Successfully");
 				console.log(JSON.stringify(result.args.tokenId));
 				console.log(JSON.stringify(result.args.tokenName));
 				console.log(JSON.stringify(result.args.oldOwner));

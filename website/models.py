@@ -23,7 +23,7 @@ class Card(models.Model):
     name = models.CharField(max_length=100, null=False)
     description = models.TextField(max_length=3000)
     transactions = 0
-    owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
+    owner = models.CharField(max_length=50, default="Unassigned")
     last_bid = models.FloatField(default=0)
     eth_id = models.IntegerField(null=True, blank=True)
     image = models.ImageField(null=True, blank=True)

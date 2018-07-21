@@ -2,7 +2,7 @@ var $ = django.jQuery;
 $(".deletelink").hide();
 $('[name="_addanother"]').hide();
 $('[name="_continue"]').hide();
-$('[name="field-eth_id"]').hide();
+$('.field-eth_id').hide();
 
 
 function hide_unhide(selection) {

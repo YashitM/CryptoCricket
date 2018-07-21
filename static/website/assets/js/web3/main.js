@@ -14,5 +14,5 @@ $("[id*='buy_now']").click( function(e) {
 
 // $("[id*='metamask_pay']").click( function(e) {
 //     e.preventDefault();
-//     console.log("Hlelo";);
+//     buyCard(,);
 // });
