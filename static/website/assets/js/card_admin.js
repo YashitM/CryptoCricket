@@ -2,7 +2,10 @@ var $ = django.jQuery;
 $(".deletelink").hide();
 $('[name="_addanother"]').hide();
 $('[name="_continue"]').hide();
-$(".field-eth_id").hide();
+$("").hide();
+
+var input = document.getElementsByClassName("field-eth_id")[0];
+input.setAttribute("type", "hidden");
 
 function hide_unhide(selection) {
     if(selection !== "Player") {
