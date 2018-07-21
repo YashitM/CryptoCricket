@@ -6,7 +6,6 @@ var $ = django.jQuery;
 
 function addNewCard(cardName, cardID)
 {
-	console.log("h");
 	var currentAcc = "";
 	var ceoAcc = "";
     web3.eth.getCoinbase(function(err,account)
@@ -34,7 +33,7 @@ function addNewCard(cardName, cardID)
 	  }
 	});
 
-	var myEvent = cryptoCricketInstance.LogBirth({},{fromBlock: 0, toBlock: 'latest'});
+	var myEvent = cryptoCricketInstance.LogBirth({},{fromBlock: web3.eth.getBlockNumber(function(error, result){ console.log(result)}), toBlock: 'latest'});
 	if(currentAcc !== ceoAcc)
 	{
 		// show popup asking user to login from admin account
