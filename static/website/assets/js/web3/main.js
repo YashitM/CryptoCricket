@@ -11,3 +11,4 @@ $("[id*='buy_now']").click( function(e) {
     }
     return false;
 });
+

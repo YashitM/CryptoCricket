@@ -55,6 +55,9 @@ function addNewCard(cardName, cardID)
 		      console.log(JSON.stringify(result.args.tokenId));
 		      console.log(JSON.stringify(result.args.name));
 		      console.log(JSON.stringify(result.args.Price));
+
+		      document.getElementById("id_eth_id").value = JSON.stringify(result.args.tokenId);
+
               document.getElementById("card_form").submit();
 		    });
 		  }

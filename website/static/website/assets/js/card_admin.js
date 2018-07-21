@@ -2,6 +2,7 @@ var $ = django.jQuery;
 $(".deletelink").hide();
 $('[name="_addanother"]').hide();
 $('[name="_continue"]').hide();
+$(".field-eth_id").hide();
 
 function hide_unhide(selection) {
     if(selection !== "Player") {

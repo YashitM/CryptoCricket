@@ -25,7 +25,7 @@ class Card(models.Model):
     transactions = 0
     owner = models.ForeignKey(User, models.SET_NULL, blank=True, null=True)
     last_bid = models.FloatField(default=0)
-    eth_id = models.IntegerField(null=True, blank=True, editable=False)
+    eth_id = models.IntegerField(null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     icc_ranking = models.IntegerField(blank=True, null=True)
     country = models.CharField(max_length=100, null=True, blank=True)
