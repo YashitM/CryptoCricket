@@ -12,6 +12,8 @@ function addNewCard(cardName, cardID)
 	{
 	if(err === null)
 	{
+        $('body').addClass("loading");
+
 		currentAcc = account;
 		cryptoCricketInstance.ceoAddress(function(error,result)
 		{
@@ -22,17 +24,21 @@ function addNewCard(cardName, cardID)
 				var myEvent = cryptoCricketInstance.LogBirth({},{fromBlock: web3.eth.getBlockNumber(function(error, result){}), toBlock: 'latest'});
 				if(currentAcc !== ceoAcc)
 				{
-					alert("Login from admin account");
+                    $('body').removeClass("loading");
+                    alert("Login from admin account");
 					return;
 				}
 				else
 				{
 					cryptoCricketInstance.createPlayer(cardName, cardID, function(error,result)
 					{
-					if(error)
-						console.error(error);
+					if(error) {
+                        console.error(error);
+                        $('body').removeClass("loading");
+                    }
 					else
 					{
+
 						myEvent.watch(function(error, result)
 						{
 						console.log("Created Card Successfully");
@@ -46,6 +52,7 @@ function addNewCard(cardName, cardID)
 						var input = document.getElementById("id_eth_id");
 						token = token.replace('"',"").replace('"',"");
 						input.setAttribute("value", parseInt(token));
+                        $('body').removeClass("loading");
 
 						document.getElementById("card_form").submit();
 						});
@@ -57,6 +64,7 @@ function addNewCard(cardName, cardID)
 			else
 			{
 				console.error(error);
+				$('body').removeClass("loading");
 				return;
 			}
 		});

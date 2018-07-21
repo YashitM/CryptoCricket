@@ -7,7 +7,7 @@ class RegisterForm(forms.ModelForm):
     last_name = forms.CharField(label='Last Name', max_length=50, required=True)
     email = forms.EmailField(label='Email', required=True)
     username = forms.CharField(label='Username', max_length=50, required=True)
-    eth_address = forms.CharField(max_length=30, required=True)
+    eth_address = forms.CharField(max_length=43, required=True)
     password = forms.CharField(widget=forms.PasswordInput(), required=True)
     confirm_password = forms.CharField(widget=forms.PasswordInput(), required=True)
 
@@ -15,7 +15,11 @@ class RegisterForm(forms.ModelForm):
         model = User
         fields = ('first_name', 'last_name', 'email', 'eth_address', 'username', 'password', 'confirm_password')
 
-
-class LoginForm(forms.Form):
-    username = forms.CharField(label='Username', max_length=50, required=True)
-    password = forms.CharField(widget=forms.PasswordInput(), required=True)
+    def clean_eth_address(self):
+        eth_address = self.cleaned_data.get('eth_address')
+        if eth_address:
+            if len(eth_address) != 42:
+                raise forms.ValidationError("Ethereum Address Must be of length 42.")
+        else:
+            raise forms.ValidationError("Enter the Ethereum Address")
+        return eth_address

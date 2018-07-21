@@ -11,8 +11,3 @@ $("[id*='buy_now']").click( function(e) {
     }
     return false;
 });
-
-// $("[id*='metamask_pay']").click( function(e) {
-//     e.preventDefault();
-//     buyCard(,);
-// });

@@ -1,8 +1,10 @@
+from django import forms
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, get_object_or_404
 
 from website.models import Profile, Card
-from .forms import RegisterForm, LoginForm
+from .forms import RegisterForm
 
 text_s = ["Player", "Owner", "Tournament", "Board", "Country", "ICC"]
 text_p = ["Players", "Owners", "Tournaments", "Boards", "Countries", "ICCs"]
@@ -45,9 +47,11 @@ def register(request):
                 password = form.cleaned_data['password']
                 confirm_password = form.cleaned_data['confirm_password']
                 if password == confirm_password:
-                    profile, created = Profile.objects.get_or_create(user=user)
+                    profile = Profile()
+                    profile.user_id = user.id
                     profile.eth_address = eth_address
                     profile.save()
+                    user.set_password(password)
                     user.user_profile = profile
                     user.save()
                     login(request, user)
@@ -64,20 +68,16 @@ def register(request):
 def login_user(request):
     if not request.user.is_authenticated:
         if request.method == "POST":
-            form = LoginForm(request.POST)
-            if form.is_valid():
 
-                username = form.cleaned_data['username']
-                password = form.cleaned_data['password']
+            username = request.POST.get('username')
+            password = request.POST.get('password')
 
-                user = authenticate(username=username, password=password)
-                if user is not None:
-                    login(request, user)
-                    return redirect('home')
-        else:
-            form = LoginForm
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('home')
 
-        return render(request, 'website/login.html', {"form": form})
+        return render(request, 'website/login.html', context=None)
     else:
         return render(request, 'website/index.html', context=None)
 
@@ -93,34 +93,56 @@ def logout_user(request):
 
 def marketplace_players(request):
     all_players = Card.objects.all().filter(card_type=text_s[0])
-    return render(request, 'website/marketplace.html', {'items': all_players, 'text_s': text_s[0], 'text_p': text_p[0]})
+    context = {'items': all_players, 'text_s': text_s[0], 'text_p': text_p[0]}
+    if not request.user.is_staff:
+        profile = get_object_or_404(Profile, user_id=request.user.id)
+        context['eth_address'] = profile.eth_address
+    return render(request, 'website/marketplace.html', context=context)
 
 
 def marketplace_team_owners(request):
     all_owners = Card.objects.all().filter(card_type=text_s[1])
-    return render(request, 'website/marketplace.html', {'items': all_owners, 'text_s': text_s[1], 'text_p': text_p[1]})
+    context = {'items': all_owners, 'text_s': text_s[1], 'text_p': text_p[1]}
+    if not request.user.is_staff:
+        profile = get_object_or_404(Profile, user_id=request.user.id)
+        context['eth_address'] = profile.eth_address
+    return render(request, 'website/marketplace.html', context=context)
 
 
 def marketplace_tournaments(request):
     all_tournaments = Card.objects.all().filter(card_type=text_s[2])
-    return render(request, 'website/marketplace.html',
-                  {'items': all_tournaments, 'text_s': text_s[2], 'text_p': text_p[2]})
+    context = {'items': all_tournaments, 'text_s': text_s[2], 'text_p': text_p[2]}
+    if not request.user.is_staff:
+        profile = get_object_or_404(Profile, user_id=request.user.id)
+        context['eth_address'] = profile.eth_address
+    return render(request, 'website/marketplace.html', context=context)
 
 
 def marketplace_boards(request):
     all_boards = Card.objects.all().filter(card_type=text_s[3])
-    return render(request, 'website/marketplace.html', {'items': all_boards, 'text_s': text_s[3], 'text_p': text_p[3]})
+    context = {'items': all_boards, 'text_s': text_s[3], 'text_p': text_p[3]}
+    if not request.user.is_staff:
+        profile = get_object_or_404(Profile, user_id=request.user.id)
+        context['eth_address'] = profile.eth_address
+    return render(request, 'website/marketplace.html', context=context)
 
 
 def marketplace_countries(request):
     all_countries = Card.objects.all().filter(card_type=text_s[4])
-    return render(request, 'website/marketplace.html',
-                  {'items': all_countries, 'text_s': text_s[4], 'text_p': text_p[4]})
+    context = {'items': all_countries, 'text_s': text_s[4], 'text_p': text_p[4]}
+    if not request.user.is_staff:
+        profile = get_object_or_404(Profile, user_id=request.user.id)
+        context['eth_address'] = profile.eth_address
+    return render(request, 'website/marketplace.html', context=context)
 
 
 def marketplace_iccs(request):
     all_iccs = Card.objects.all().filter(card_type=text_s[5])
-    return render(request, 'website/marketplace.html', {'items': all_iccs, 'text_s': text_s[5], 'text_p': text_p[5]})
+    context = {'items': all_iccs, 'text_s': text_s[5], 'text_p': text_p[5]}
+    if not request.user.is_staff:
+        profile = get_object_or_404(Profile, user_id=request.user.id)
+        context['eth_address'] = profile.eth_address
+    return render(request, 'website/marketplace.html', context=context)
 
 
 # CARD DETAILS
@@ -129,8 +151,11 @@ def card_details(request, item_id):
     selected_item = get_object_or_404(Card, pk=item_id)
     card_type = selected_item.card_type
     index = text_s.index(card_type)
-    return render(request, 'website/details.html',
-                  {'item': selected_item, 'text_s': text_s[index], 'text_p': text_p[index]})
+    context = {'item': selected_item, 'text_s': text_s[index], 'text_p': text_p[index]}
+    if not request.user.is_staff:
+        profile = get_object_or_404(Profile, user_id=request.user.id)
+        context['eth_address'] = profile.eth_address
+    return render(request, 'website/details.html', context=context)
 
 
 def successful_transaction(request, item_id, current_bid):

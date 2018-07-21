@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User
+from django.core.validators import MinLengthValidator
 from django.db import models
 
 
@@ -37,8 +38,7 @@ class Card(models.Model):
 
 class Profile(models.Model):
     user = models.OneToOneField(User, unique=True, on_delete=models.CASCADE, related_name='user_profile')
-    eth_address = models.CharField(max_length=30, null=False, blank=False)
-    last_bid = models.FloatField()
+    eth_address = models.CharField(max_length=43, null=False, blank=False)
     transactions = 0
 
     def __str__(self):

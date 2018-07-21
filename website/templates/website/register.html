@@ -25,7 +25,9 @@
                             {% csrf_token %}
 
                             {% if form.errors %}
-                                {{ form.errors }}
+                                <div class="alert alert-danger">
+                                    <strong>{{ form.errors }}</strong>
+                                </div>
                             {% endif %}
                             <input class="margin-bottom-30" type="text" name="first_name" required id="id_first_name" placeholder="First Name">
                             <input class="margin-bottom-30" type="text" name="last_name" required id="id_last_name" placeholder="Last Name">
