@@ -51,13 +51,16 @@ function addNewCard(cardName, cardID)
 		    myEvent.watch(function(error, result)
 		    {
 		      console.log("Created Card Successfully");
-		      console.log(JSON.stringify(result.args.tokenId));
+
+              var token = JSON.stringify(result.args.tokenId);
+
+		      console.log(token);
 		      console.log(JSON.stringify(result.args.name));
 		      console.log(JSON.stringify(result.args.Price));
 
-		      // document.getElementById("id_eth_id").value = JSON.stringify(result.args.tokenId);
 		      var input = document.getElementById("id_eth_id");
-		      input.setAttribute("value", Number(JSON.stringify(result.args.tokenId)));
+		      token = token.replace('"',"").replace('"',"");
+		      input.setAttribute("value", parseInt(token));
 
               // document.getElementById("card_form").submit();
 		    });
