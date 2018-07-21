@@ -18,6 +18,8 @@ function buyCard(tokenID, price, walletAddress)
 				alert("Please Use Wallet: " + walletAddress + " to make the transaction");
 				return;
 			}
+			
+			// show svg graphic
 
 			cryptoCricketInstance.purchase(tokenID, {value: web3.toWei(price, "ether")}, function(error,result)
 			{
@@ -27,6 +29,8 @@ function buyCard(tokenID, price, walletAddress)
 				{
 					myEvent.watch(function(error, result)
 					{
+						// hide svg graphic
+
 						console.log("Bought Card Successfully"); 
 						console.log(JSON.stringify(result.args.tokenId));
 						console.log(JSON.stringify(result.args.tokenName));
