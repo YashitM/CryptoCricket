@@ -18,7 +18,11 @@ function buyCard(tokenID, price, walletAddress)
 				alert("Please Use Wallet: " + walletAddress + " to make the transaction");
 				return;
 			}
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> 4eca859b09f15ad87a3300bcbb28a85d876915f3
 			// show svg graphic
 
 			cryptoCricketInstance.purchase(tokenID, {value: web3.toWei(price, "ether")}, function(error,result)
@@ -31,7 +35,11 @@ function buyCard(tokenID, price, walletAddress)
 					{
 						// hide svg graphic
 
+<<<<<<< HEAD
 						console.log("Bought Card Successfully");
+=======
+						console.log("Bought Card Successfully"); 
+>>>>>>> 4eca859b09f15ad87a3300bcbb28a85d876915f3
 						console.log(JSON.stringify(result.args.tokenId));
 						console.log(JSON.stringify(result.args.tokenName));
 						console.log(JSON.stringify(result.args.oldOwner));
@@ -49,4 +57,8 @@ function buyCard(tokenID, price, walletAddress)
 		}
 	});
 	return;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4eca859b09f15ad87a3300bcbb28a85d876915f3

@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d55bae5d-6b15-4c02-8b51-9071028b6e69" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/migrations/0002_auto_20180721_1438.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/migrations/0003_auto_20180721_1947.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/website/assets/js/web3/adminAddNewPlayer.js" afterPath="$PROJECT_DIR$/static/website/assets/js/web3/adminAddNewPlayer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/website/assets/js/web3/buyCard.js" afterPath="$PROJECT_DIR$/static/website/assets/js/web3/buyCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/forms.py" afterPath="$PROJECT_DIR$/website/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/website/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/models.py" afterPath="$PROJECT_DIR$/website/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/website/assets/css/main.css" afterPath="$PROJECT_DIR$/website/static/website/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/website/assets/js/web3/adminAddNewPlayer.js" afterPath="$PROJECT_DIR$/website/static/website/assets/js/web3/adminAddNewPlayer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/website/assets/js/web3/buyCard.js" afterPath="$PROJECT_DIR$/website/static/website/assets/js/web3/buyCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/website/assets/js/web3/main.js" afterPath="$PROJECT_DIR$/website/static/website/assets/js/web3/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/website/base.html" afterPath="$PROJECT_DIR$/website/templates/website/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/website/details.html" afterPath="$PROJECT_DIR$/website/templates/website/details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/website/login.html" afterPath="$PROJECT_DIR$/website/templates/website/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/website/marketplace.html" afterPath="$PROJECT_DIR$/website/templates/website/marketplace.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/website/register.html" afterPath="$PROJECT_DIR$/website/templates/website/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/urls.py" afterPath="$PROJECT_DIR$/website/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/views.py" afterPath="$PROJECT_DIR$/website/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,8 +36,8 @@
       <file leaf-file-name="buyCard.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/website/assets/js/web3/buyCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            <state relative-caret-position="850">
+              <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -63,8 +49,22 @@
         <entry file="file://$PROJECT_DIR$/static/website/assets/js/web3/adminAddNewPlayer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1190">
-              <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-              <folding />
+              <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+              <folding>
+                <marker date="1532216214707" expanded="true" signature="221:1916" ph="{...}" />
+                <marker date="1532216214707" expanded="true" signature="308:1912" ph="{...}" />
+                <marker date="1532216214707" expanded="true" signature="329:1867" ph="{...}" />
+                <marker date="1532216214707" expanded="true" signature="455:1862" ph="{...}" />
+                <marker date="1532216214707" expanded="true" signature="474:1764" ph="{...}" />
+                <marker date="1532216214707" expanded="true" signature="812:1731" ph="{...}" />
+                <marker date="1532216214707" expanded="true" signature="1228:1708" ph="{...}" />
+                <marker date="1532216214707" expanded="true" signature="1228:1717" ph="{...}" />
+                <marker date="1532216214707" expanded="true" signature="1228:1724" ph="{...}" />
+                <marker date="1532216214707" expanded="true" signature="1291:1426" ph="//..." />
+                <marker date="1532216214707" expanded="true" signature="1776:1858" ph="{...}" />
+                <marker date="1532216214707" expanded="true" signature="1875:1909" ph="{...}" />
+                <marker date="1532216214707" expanded="true" signature="2182:2196" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/website/templates/website/details.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="202">
-              <caret line="49" column="60" lean-forward="true" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+              <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -93,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/website/static/website/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="454">
-              <caret line="5246" column="0" lean-forward="true" selection-start-line="5246" selection-start-column="0" selection-end-line="5246" selection-end-column="0" />
+              <caret line="5246" column="0" lean-forward="false" selection-start-line="5246" selection-start-column="0" selection-end-line="5246" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1089,7 +1089,7 @@
     <entry file="file://$PROJECT_DIR$/website/static/website/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
-          <caret line="5246" column="0" lean-forward="true" selection-start-line="5246" selection-start-column="0" selection-end-line="5246" selection-end-column="0" />
+          <caret line="5246" column="0" lean-forward="false" selection-start-line="5246" selection-start-column="0" selection-end-line="5246" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1115,23 +1115,37 @@
     <entry file="file://$PROJECT_DIR$/static/website/assets/js/web3/adminAddNewPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
-          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-          <folding />
+          <caret line="74" column="5" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <marker date="1532216214707" expanded="true" signature="221:1916" ph="{...}" />
+            <marker date="1532216214707" expanded="true" signature="308:1912" ph="{...}" />
+            <marker date="1532216214707" expanded="true" signature="329:1867" ph="{...}" />
+            <marker date="1532216214707" expanded="true" signature="455:1862" ph="{...}" />
+            <marker date="1532216214707" expanded="true" signature="474:1764" ph="{...}" />
+            <marker date="1532216214707" expanded="true" signature="812:1731" ph="{...}" />
+            <marker date="1532216214707" expanded="true" signature="1228:1708" ph="{...}" />
+            <marker date="1532216214707" expanded="true" signature="1228:1717" ph="{...}" />
+            <marker date="1532216214707" expanded="true" signature="1228:1724" ph="{...}" />
+            <marker date="1532216214707" expanded="true" signature="1291:1426" ph="//..." />
+            <marker date="1532216214707" expanded="true" signature="1776:1858" ph="{...}" />
+            <marker date="1532216214707" expanded="true" signature="1875:1909" ph="{...}" />
+            <marker date="1532216214707" expanded="true" signature="2182:2196" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website/templates/website/details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
-          <caret line="49" column="60" lean-forward="true" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
+          <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/website/assets/js/web3/buyCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="850">
+          <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

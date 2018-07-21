@@ -40,7 +40,7 @@ function buyCard(tokenID, price, walletAddress)
 						console.log(JSON.stringify(result.args.newPrice));
 					});
 				}
-			})
+			});
 			myEvent.stopWatching();
 		}
 		else

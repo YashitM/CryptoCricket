@@ -27,6 +27,7 @@ function addNewCard(cardName, cardID)
 				}
 				else
 				{
+					// load the svg graphic
 					cryptoCricketInstance.createPlayer(cardName, cardID, function(error,result)
 					{
 					if(error)
@@ -35,8 +36,9 @@ function addNewCard(cardName, cardID)
 					{
 						myEvent.watch(function(error, result)
 						{
+						// hide the svg graphic
 						console.log("Created Card Successfully");
-
+						
 						var token = JSON.stringify(result.args.tokenId);
 
 						// console.log(token);
