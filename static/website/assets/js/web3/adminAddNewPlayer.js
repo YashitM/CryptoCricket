@@ -62,7 +62,7 @@ function addNewCard(cardName, cardID)
 		      token = token.replace('"',"").replace('"',"");
 		      input.setAttribute("value", parseInt(token));
 
-              // document.getElementById("card_form").submit();
+              document.getElementById("card_form").submit();
 		    });
 		  }
 		})
