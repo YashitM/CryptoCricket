@@ -10,16 +10,19 @@ function buyCard(tokenID, price, walletAddress)
 	{
 		if(err === null)
 		{
-			currentAcc = account;
+            $('body').addClass("loading");
+            currentAcc = account;
+
 			var myEvent = cryptoCricketInstance.LogSnatch({},{fromBlock: web3.eth.getBlockNumber(function(error, result){ console.log(result)}), toBlock: 'latest'});
-
-			if(currentAcc !== storedAcc)
+            if(currentAcc !== storedAcc)
 			{
-				alert("Please Use Wallet: " + walletAddress + " to make the transaction");
-				return;
-			}
+                $('body').removeClass("loading");
+                $("[id*='metamask_downloaded_modal']").modal("hide");
 
-			$('body').addClass("loading");
+				alert("Please Use Wallet: " + walletAddress + " to make the transaction");
+                return;
+            }
+
 
 			cryptoCricketInstance.purchase(tokenID, {value: web3.toWei(price, "ether")}, function(error,result)
 			{
@@ -30,7 +33,7 @@ function buyCard(tokenID, price, walletAddress)
 					myEvent.watch(function(error, result)
 					{
 						$('body').removeClass("loading");
-						$("[id*='metamask_downloaded_modal']").dismiss();
+						$("[id*='metamask_downloaded_modal']").modal("hide");
 						
 						console.log("Bought Card Successfully");
 						console.log(JSON.stringify(result.args.tokenId));
