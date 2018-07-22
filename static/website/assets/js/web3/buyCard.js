@@ -5,7 +5,6 @@
 function buyCard(tokenID, price, walletAddress)
 {
 	var currentAcc = "";
-	price = 1;
 	var storedAcc = walletAddress.toLowerCase();
 	web3.eth.getCoinbase(function(err,account)
 	{
