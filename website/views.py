@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate, login, logout
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect, get_object_or_404
 
 from django.contrib.auth.decorators import login_required
@@ -158,17 +159,20 @@ def card_details(request, item_id):
     return render(request, 'website/details.html', context=context)
 
 
-@login_required
+# @login_required
 def successful_transaction(request):
     if request.method == "POST":
         current_user = request.user
-        form = RegisterForm(request.POST)
+        form = BuyForm(request.POST)
         if form.is_valid():
             item_id = form.cleaned_data['item_id']
-            current_bid = form.cleaned_data['current_bid']
-
-            selected_item = get_object_or_404(Card, pk=item_id)
+            current_bid = form.cleaned_data['updated_price']
+            selected_item = get_object_or_404(Card, eth_id=item_id)
             selected_item.transactions += 1
             selected_item.last_bid = float(current_bid)
             selected_item.owner = current_user.user_profile.eth_address
             selected_item.save()
+        else:
+            print(form.errors)
+
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))

@@ -5,6 +5,7 @@
 function buyCard(tokenID, price, walletAddress)
 {
 	var currentAcc = "";
+	price = 1;
 	var storedAcc = walletAddress.toLowerCase();
 	web3.eth.getCoinbase(function(err,account)
 	{
@@ -39,8 +40,8 @@ function buyCard(tokenID, price, walletAddress)
 						var updated_price_box = document.getElementById("id_updated_price");
 						var form = document.getElementById("item_bought_form");
 
-						item_id_box.value = tokenID;
-						updated_price_box.value = newPrice;
+						item_id_box.value = JSON.stringify(result.args.tokenId).replace('"',"").replace('"',"");
+						updated_price_box.value = web3.fromWei(Number(JSON.stringify(result.args.newPrice).replace('"',"").replace('"',"")), "ether");
 
 						form.submit();
 
