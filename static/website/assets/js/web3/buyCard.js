@@ -30,6 +30,7 @@ function buyCard(tokenID, price, walletAddress)
 					myEvent.watch(function(error, result)
 					{
 						$('body').removeClass("loading");
+						$("[id*='metamask_downloaded_modal']").dismiss();
 						
 						console.log("Bought Card Successfully");
 						console.log(JSON.stringify(result.args.tokenId));

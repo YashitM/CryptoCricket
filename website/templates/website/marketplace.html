@@ -32,60 +32,35 @@
                         <div class="magazi-main-prodcts text-center">
                         {% if items %}
                             {% for item in items %}
-{#                                <div class="col-md-3 col-sm-6 col-xs-6 full-wdth">#}
-{#                                    <div class="magazi-product-inner margin-bottom-80">#}
-{#                                        {% if item.image %}#}
-{#                                            <div class="magazi-product-thumb">#}
-{#                                                <img width="150" height="150" src="{{ item.image.url }}" alt="product-8">#}
-{#                                                <a href="#" class="magazi-overlay"></a>#}
-{#                                            </div>#}
-{#                                        {% endif %}#}
-{#                                        <div class="magazi-product-detail">#}
-{#                                            <h1>#}
-{#                                                <a href="#">{{ item.name }}</a>#}
-{#                                            </h1>#}
-{#                                            <p>#}
-{#                                                <span>{{ item.last_bid }} ETH</span>#}
-{#                                            </p>#}
-{#                                            <div class="buy">#}
-{#                                                <a style="list-style-type: none; color: black;" href="{% url text_s|lower item_id=item.id %}"><span>About</span></a>#}
-{#                                            </div>#}
-{#                                            {% if user.is_authenticated %}#}
-{#                                                <div class="buy" id="buy_now{{ item.id }}">#}
-{#                                                    <span style="color:#000;">Buy Now!</span>#}
-{#                                                </div>#}
-{#                                            {% else %}#}
-{#                                                <a href="{% url 'login' %}" title="" class="adding-cart">Login to Buy Now</a>#}
-{#                                            {% endif %}#}
-{##}
-{#                                        </div>#}
-{#                                    </div>#}
-{#                                </div>#}
-                                <li class="team-card-grid__item"><a class="card team-card" href="/teams/chennai-super-kings">
-                                    <div class="card__bg team-card__bg u-show-phablet" style="background-image: url(https://iplplatform-static-files.s3.amazonaws.com/IPL/photo/2018/01/05/275029aa-927d-41a2-b379-2977dce2828a/Chennai-super-kings.jpg);"></div>
-                                    <div class="card__bg team-card__bg u-hide-phablet" style="background-image: url(https://iplplatform-static-files.s3.amazonaws.com/IPL/photo/2017/03/09/ac6f48f0-e167-44b7-b1c0-2e70c9742302/Chennai-super-kings.jpg);"></div>
-
-                                    <div class="team-card__inner card__inner CSK">
-                                        <div class="card__info">
-                                            <div class="team-card__logo tLogo58x t-CSK CSK u-show-phablet"></div>
-                                            <div class="team-card__logo tLogo158x t-CSK CSK u-hide-phablet"></div>
-                                            <div class="card__details">
-                                                <h3 class="card__title">Chennai Super<br> Kings</h3>
-                                                <p class="card__subtitle u-hide-phablet">
-                                                    M. A. Chidambaram Stadium
-                                                </p>
-                                                    <div class="team-card__wins">
-                                                        <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/resources/ver/i/svg-output/icons.svg#icn-trophy"></use></svg>
-                                                        2010, 2011
-                                                    </div>
+                                <div class="col-md-3 col-sm-6 col-xs-6 full-wdth">
+                                    <div class="magazi-product-inner margin-bottom-80">
+                                        {% if item.image %}
+                                            <div class="magazi-product-thumb">
+                                                <img width="150" height="150" src="{{ item.image.url }}" alt="product-8">
+                                                <a href="#" class="magazi-overlay"></a>
                                             </div>
+                                        {% endif %}
+                                        <div class="magazi-product-detail">
+                                            <h1>
+                                                <a href="#">{{ item.name }}</a>
+                                            </h1>
+                                            <p>
+                                                <span>{{ item.last_bid }} ETH</span>
+                                            </p>
+                                            <div class="buy">
+                                                <a style="list-style-type: none; color: black;" href="{% url text_s|lower item_id=item.id %}"><span>About</span></a>
+                                            </div>
+                                            {% if user.is_authenticated %}
+                                                <div class="buy" id="buy_now{{ item.id }}">
+                                                    <span style="color:#000;">Buy Now!</span>
+                                                </div>
+                                            {% else %}
+                                                <a href="{% url 'login' %}" title="" class="adding-cart">Login to Buy Now</a>
+                                            {% endif %}
+
                                         </div>
-                                        <button class="card__link">
-                                            Team Home
-                                        </button>
                                     </div>
-                                    </a>
-                                </li>
+                                </div>
                                 <div class="modal fade" id="metamask_download_modal{{ item.id }}">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
