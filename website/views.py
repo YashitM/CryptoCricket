@@ -94,7 +94,7 @@ def logout_user(request):
 def marketplace_players(request):
     all_players = Card.objects.all().filter(card_type=text_s[0])
     context = {'items': all_players, 'text_s': text_s[0], 'text_p': text_p[0]}
-    if not request.user.is_staff:
+    if not request.user.is_staff and request.user.is_authenticated:
         profile = get_object_or_404(Profile, user_id=request.user.id)
         context['eth_address'] = profile.eth_address
     return render(request, 'website/marketplace.html', context=context)
@@ -103,7 +103,7 @@ def marketplace_players(request):
 def marketplace_team_owners(request):
     all_owners = Card.objects.all().filter(card_type=text_s[1])
     context = {'items': all_owners, 'text_s': text_s[1], 'text_p': text_p[1]}
-    if not request.user.is_staff:
+    if not request.user.is_staff and request.user.is_authenticated:
         profile = get_object_or_404(Profile, user_id=request.user.id)
         context['eth_address'] = profile.eth_address
     return render(request, 'website/marketplace.html', context=context)
@@ -112,7 +112,7 @@ def marketplace_team_owners(request):
 def marketplace_tournaments(request):
     all_tournaments = Card.objects.all().filter(card_type=text_s[2])
     context = {'items': all_tournaments, 'text_s': text_s[2], 'text_p': text_p[2]}
-    if not request.user.is_staff:
+    if not request.user.is_staff and request.user.is_authenticated:
         profile = get_object_or_404(Profile, user_id=request.user.id)
         context['eth_address'] = profile.eth_address
     return render(request, 'website/marketplace.html', context=context)
@@ -121,7 +121,7 @@ def marketplace_tournaments(request):
 def marketplace_boards(request):
     all_boards = Card.objects.all().filter(card_type=text_s[3])
     context = {'items': all_boards, 'text_s': text_s[3], 'text_p': text_p[3]}
-    if not request.user.is_staff:
+    if not request.user.is_staff and request.user.is_authenticated:
         profile = get_object_or_404(Profile, user_id=request.user.id)
         context['eth_address'] = profile.eth_address
     return render(request, 'website/marketplace.html', context=context)
@@ -130,7 +130,7 @@ def marketplace_boards(request):
 def marketplace_countries(request):
     all_countries = Card.objects.all().filter(card_type=text_s[4])
     context = {'items': all_countries, 'text_s': text_s[4], 'text_p': text_p[4]}
-    if not request.user.is_staff:
+    if not request.user.is_staff and request.user.is_authenticated:
         profile = get_object_or_404(Profile, user_id=request.user.id)
         context['eth_address'] = profile.eth_address
     return render(request, 'website/marketplace.html', context=context)
@@ -139,7 +139,7 @@ def marketplace_countries(request):
 def marketplace_iccs(request):
     all_iccs = Card.objects.all().filter(card_type=text_s[5])
     context = {'items': all_iccs, 'text_s': text_s[5], 'text_p': text_p[5]}
-    if not request.user.is_staff:
+    if not request.user.is_staff and request.user.is_authenticated:
         profile = get_object_or_404(Profile, user_id=request.user.id)
         context['eth_address'] = profile.eth_address
     return render(request, 'website/marketplace.html', context=context)
@@ -152,7 +152,7 @@ def card_details(request, item_id):
     card_type = selected_item.card_type
     index = text_s.index(card_type)
     context = {'item': selected_item, 'text_s': text_s[index], 'text_p': text_p[index]}
-    if not request.user.is_staff:
+    if not request.user.is_staff and request.user.is_authenticated:
         profile = get_object_or_404(Profile, user_id=request.user.id)
         context['eth_address'] = profile.eth_address
     return render(request, 'website/details.html', context=context)

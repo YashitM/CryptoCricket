@@ -2,235 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d55bae5d-6b15-4c02-8b51-9071028b6e69" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/css/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/css/jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/css/jquery.range.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/css/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/Spinner.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/ab-img1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/ab-img2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/ab-img3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/about-img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/adver-img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/audiojungle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-50x50-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-50x50-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-details1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-details13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-details22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-details33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-fullwidht-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-img9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blog-single1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blogger.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/blogger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/camera.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/cart-item1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/cart-item2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/cat-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/cat-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/cat-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/cat-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/close-qk.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/close2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/cn-icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/cn-icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/cn-icon3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/cn-icon4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/codecanyon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/color1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/color2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/color3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/color4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/color5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/color6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/coming-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/error-img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/gallery9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/graphicriver.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/insta1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/insta2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/insta3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/insta4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/insta5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/insta6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/list-pro9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/log-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/magazi-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/magazi-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/magazi-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/magazi-img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/magazi-img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/magazi-img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/magazi-pro1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/magazi-slider-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/magazi-slider-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/magazi-slider-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/masonary-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/masonary-img10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/masonary-img11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/masonary-img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/masonary-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/masonary-img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/masonary-img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/masonary-img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/masonary-img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/masonary-img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/masonary-img9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/menu-img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/metamask-download.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/metamask-pay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/mg-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/nav-icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/nav-icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/partner-logo1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/partner-logo2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/partner-logo3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/partner-logo4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/photodune.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/picon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/picon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/picon3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/plus2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/portfolio-single1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/pro-large1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/pro-thumb1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/product-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/product-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/product-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/product-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/product-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/product-5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/product-6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/product-7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/product-8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/qk-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/qk-img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/slider-bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/slider-img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/slider-img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/slider-img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/slider-img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/small-post1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/small-post2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/sp1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/sp2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/themeforest.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/user-img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/user-img2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/user-img3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/vector-shape.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/img/vector.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/card_admin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/datecounter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/froogaloop2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/handleCounter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/html5lightbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/isotope.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/jquery-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/jquery.range-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/skins/default/lightbox-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/skins/default/lightbox-next.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/skins/default/lightbox-pause.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/skins/default/lightbox-play.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/skins/default/lightbox-prev.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/web3/adminAddNewPlayer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/web3/buyCard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/web3/contractInstance.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/js/web3/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/lib/slick/ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/lib/slick/fonts/slick.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/lib/slick/fonts/slick.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/lib/slick/fonts/slick.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/lib/slick/fonts/slick.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/lib/slick/slick-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/lib/slick/slick.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/assets/lib/slick/slick.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/css/layers.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/css/navigation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/css/settings.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/jquery.themepunch.revolution.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/jquery.themepunch.tools.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/revolution.extension.actions.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/revolution.extension.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/revolution.extension.kenburn.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/revolution.extension.layeranimation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/revolution.extension.migration.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/revolution.extension.navigation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/revolution.extension.parallax.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/revolution.extension.slideanims.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/revolution.extension.video.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/revolution.initialize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/website/revolution/js/revolution.initialize2.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cricket/settings.py" afterPath="$PROJECT_DIR$/cricket/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cricket/urls.py" afterPath="$PROJECT_DIR$/cricket/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/website/assets/js/card_admin.js" afterPath="$PROJECT_DIR$/static/website/assets/js/card_admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin.py" afterPath="$PROJECT_DIR$/website/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/models.py" afterPath="$PROJECT_DIR$/website/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/views.py" afterPath="$PROJECT_DIR$/website/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -248,8 +21,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            <state relative-caret-position="255">
+              <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -265,16 +38,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="card_admin.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/website/assets/js/card_admin.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/admin.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -285,11 +48,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="96" column="29" lean-forward="true" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cricket/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+            <state relative-caret-position="590">
+              <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -308,8 +83,8 @@
       <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/website/assets/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4518">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="701">
+              <caret line="307" column="9" lean-forward="true" selection-start-line="307" selection-start-column="9" selection-end-line="307" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -318,8 +93,18 @@
       <file leaf-file-name="contractInstance.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/website/assets/js/web3/contractInstance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="697">
+              <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="marketplace.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website/templates/website/marketplace.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="67" column="104" lean-forward="true" selection-start-line="67" selection-start-column="104" selection-end-line="67" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -400,14 +185,12 @@
         <option value="$PROJECT_DIR$/website/static/website/assets/js/web3/main.js" />
         <option value="$PROJECT_DIR$/website/static/website/assets/js/web3/buyCard.js" />
         <option value="$PROJECT_DIR$/website/context_processors.py" />
-        <option value="$PROJECT_DIR$/website/templates/website/marketplace.html" />
         <option value="$PROJECT_DIR$/website/templates/website/login.html" />
         <option value="$PROJECT_DIR$/website/forms.py" />
         <option value="$PROJECT_DIR$/website/urls.py" />
         <option value="$PROJECT_DIR$/website/templates/website/details.html" />
         <option value="$PROJECT_DIR$/website/static/website/assets/css/main.css" />
         <option value="$PROJECT_DIR$/website/templates/website/base.html" />
-        <option value="$PROJECT_DIR$/website/views.py" />
         <option value="$PROJECT_DIR$/static/website/assets/js/web3/adminAddNewPlayer.js" />
         <option value="$PROJECT_DIR$/static/website/assets/js/web3/buyCard.js" />
         <option value="$PROJECT_DIR$/website/models.py" />
@@ -416,6 +199,8 @@
         <option value="$PROJECT_DIR$/cricket/urls.py" />
         <option value="$PROJECT_DIR$/cricket/settings.py" />
         <option value="$PROJECT_DIR$/static/website/assets/js/card_admin.js" />
+        <option value="$PROJECT_DIR$/website/views.py" />
+        <option value="$PROJECT_DIR$/website/templates/website/marketplace.html" />
       </list>
     </option>
   </component>
@@ -471,6 +256,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cricket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cricket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cricket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cricket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -771,6 +596,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -779,7 +605,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21079692" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21079692" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -802,7 +628,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -981,16 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/website/marketplace.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="87" column="68" lean-forward="true" selection-start-line="87" selection-start-column="68" selection-end-line="87" selection-end-column="68" />
-          <folding>
-            <element signature="e#5986#6029#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/static/website/assets/js/web3/buyCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1067,16 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1757">
-          <caret line="150" column="55" lean-forward="true" selection-start-line="150" selection-start-column="55" selection-end-line="150" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/templates/website/details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -1092,22 +898,6 @@
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/website/assets/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4518">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/website/assets/js/web3/contractInstance.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,18 +925,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cricket/urls.py">
+    <entry file="file://$PROJECT_DIR$/static/website/assets/js/card_admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="82" lean-forward="false" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="204">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1159,26 +941,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cricket/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+        <state relative-caret-position="590">
+          <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/website/assets/js/card_admin.js">
+    <entry file="file://$PROJECT_DIR$/website/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cricket/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <caret line="12" column="82" lean-forward="false" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/website/assets/js/web3/contractInstance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/website/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="307" column="9" lean-forward="true" selection-start-line="307" selection-start-column="9" selection-end-line="307" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="96" column="29" lean-forward="true" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/website/marketplace.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="67" column="104" lean-forward="true" selection-start-line="67" selection-start-column="104" selection-end-line="67" selection-end-column="104" />
           <folding />
         </state>
       </provider>
