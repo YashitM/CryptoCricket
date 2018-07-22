@@ -24,7 +24,7 @@ class Card(models.Model):
     description = models.TextField(max_length=3000)
     transactions = 0
     owner = models.CharField(max_length=50, default="Unassigned")
-    last_bid = models.FloatField(default=0)
+    last_bid = models.CharField(default="0", max_length=30)
     eth_id = models.IntegerField(null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     icc_ranking = models.IntegerField(blank=True, null=True)

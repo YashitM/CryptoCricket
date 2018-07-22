@@ -92,7 +92,15 @@
                                             </div>
                                             <div class="modal-body">
                                                 <p>The current buying price for this contract is {{ item.last_bid }}ETH.</p>
-                                                <p>If someone decides to snatch the contract away from you, you will be paid {{ item.last_bid|multiply:multiplier }}ETH</p>
+                                                {% if item.card_type == "Board" %}
+                                                        <p>If someone decides to snatch the contract away from you, you will be paid {{ item.last_bid|multiply:multiplier_0 }}ETH</p>
+                                                {% elif item.card_type == "Country" %}
+                                                    <p>If someone decides to snatch the contract away from you, you will be paid {{ item.last_bid|multiply:multiplier_1 }}ETH</p>
+                                                {% elif item.card_type == "Player" %}
+                                                    <p>If someone decides to snatch the contract away from you, you will be paid {{ item.last_bid|multiply:multiplier_2 }}ETH</p>
+                                                {% else %}
+                                                    <p>If someone decides to snatch the contract away from you, you will be paid {{ item.last_bid|multiply:multiplier_default }}ETH</p>
+                                                {% endif %}
                                                 <p>Transactions on the blockChain take time to process. By the time you buy this contract, it's price may already be higher than is shown on the card and your transaction will fail.</p>
                                                 <a href="javascript:buyCard({{ item.eth_id }},{{ item.last_bid }},'{{ eth_address }}');" id="metamask_pay" target="_blank" rel="noopener noreferrer" style="width: 100%; display: inline-block;">
                                                     <img width="300" height="50" src="{% static 'website/assets/img/metamask-pay.png' %}" alt="Metamask download">

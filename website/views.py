@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate, login, logout
+from django.db.models import F
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect, get_object_or_404
 
@@ -168,8 +169,8 @@ def successful_transaction(request):
             item_id = form.cleaned_data['item_id']
             current_bid = form.cleaned_data['updated_price']
             selected_item = get_object_or_404(Card, eth_id=item_id)
-            selected_item.transactions += 1
-            selected_item.last_bid = float(current_bid)
+            selected_item.transactions = F('transactions') + 1
+            selected_item.last_bid = current_bid
             selected_item.owner = current_user.user_profile.eth_address
             selected_item.save()
         else:
