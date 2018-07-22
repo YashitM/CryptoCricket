@@ -1,10 +1,10 @@
-from django import forms
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.models import User
 from django.shortcuts import render, redirect, get_object_or_404
 
+from django.contrib.auth.decorators import login_required
+
 from website.models import Profile, Card
-from .forms import RegisterForm
+from .forms import RegisterForm, BuyForm
 
 text_s = ["Player", "Owner", "Tournament", "Board", "Country", "ICC"]
 text_p = ["Players", "Owners", "Tournaments", "Boards", "Countries", "ICCs"]
@@ -158,11 +158,12 @@ def card_details(request, item_id):
     return render(request, 'website/details.html', context=context)
 
 
+@login_required
 def successful_transaction(request, item_id, current_bid):
     current_user = request.user
 
     selected_item = get_object_or_404(Card, pk=item_id)
-
+    selected_item.transactions += 1
     selected_item.last_bid = current_bid
-    selected_item.owner = current_user
+    selected_item.owner = current_user.user_profile.eth_address
     selected_item.save()

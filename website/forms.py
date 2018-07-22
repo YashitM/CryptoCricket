@@ -23,3 +23,8 @@ class RegisterForm(forms.ModelForm):
         else:
             raise forms.ValidationError("Enter the Ethereum Address")
         return eth_address
+
+
+class BuyForm(forms.Form):
+    item_id = forms.IntegerField(widget=forms.HiddenInput(), required=True)
+    updated_price = forms.CharField(widget=forms.HiddenInput(), required=True)

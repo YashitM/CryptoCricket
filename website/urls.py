@@ -1,7 +1,6 @@
 from django.urls import path
 from . import views
 
-
 urlpatterns = [
     path('', views.home, name='home'),
 
@@ -29,5 +28,5 @@ urlpatterns = [
     path('iccs/<int:item_id>', views.card_details, name='icc'),
     path('tournaments/<int:item_id>', views.card_details, name='tournament'),
 
-
+    path('success', views.successful_transaction, name='success'),
 ]

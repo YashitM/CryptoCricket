@@ -34,7 +34,16 @@ function buyCard(tokenID, price, walletAddress)
 					{
 						$('body').removeClass("loading");
 						$("[id*='metamask_downloaded_modal']").modal("hide");
-						
+
+						var item_id_box = document.getElementById("id_item_id");
+						var updated_price_box = document.getElementById("id_updated_price");
+						var form = document.getElementById("item_bought_form");
+
+						item_id_box.value = tokenID;
+						updated_price_box.value = newPrice;
+
+						form.submit();
+
 						console.log("Bought Card Successfully");
 						console.log(JSON.stringify(result.args.tokenId));
 						console.log(JSON.stringify(result.args.tokenName));

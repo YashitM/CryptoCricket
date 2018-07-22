@@ -25,6 +25,11 @@
             </div>
         </div>
 
+        <form id="item_bought_form" action="{% url 'success' %}" method="post">
+            {% csrf_token %}
+            {{ buy_form.as_p }}
+        </form>
+
         <div class="magazi-list-view">
             <div class="container">
                 <div class="tab-content">
