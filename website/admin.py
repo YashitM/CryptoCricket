@@ -36,6 +36,10 @@ class CardAdminForm(forms.ModelForm):
                 raise forms.ValidationError("Enter the Country")
             if not ipl_team:
                 raise forms.ValidationError("Enter the IPL Team")
+        if card_type == "Country":
+            icc_ranking = self.cleaned_data.get('icc_ranking')
+            if not icc_ranking:
+                raise forms.ValidationError("Enter the ICC Ranking")
         return self.cleaned_data
 
 

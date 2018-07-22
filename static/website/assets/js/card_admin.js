@@ -6,15 +6,19 @@ $('.field-eth_id').hide();
 
 
 function hide_unhide(selection) {
-    if(selection !== "Player") {
-        $(".field-icc_ranking").hide();
-        $(".field-country").hide();
-        $(".field-ipl_team").hide();
-    }
-    else {
+
+    if(selection === "Player") {
         $(".field-icc_ranking").show();
         $(".field-country").show();
         $(".field-ipl_team").show();
+    } else if (selection === "Country") {
+        $(".field-icc_ranking").show();
+        $(".field-country").hide();
+        $(".field-ipl_team").hide();
+    } else {
+        $(".field-icc_ranking").hide();
+        $(".field-country").hide();
+        $(".field-ipl_team").hide();
     }
 }
 

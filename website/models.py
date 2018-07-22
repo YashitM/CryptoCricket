@@ -12,7 +12,6 @@ class Card(models.Model):
         ("Board", 'Board'),
         ("Country", 'Country'),
         ("ICC", 'ICC'),
-
     )
 
     card_type = models.CharField(
