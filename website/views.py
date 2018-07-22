@@ -159,11 +159,16 @@ def card_details(request, item_id):
 
 
 @login_required
-def successful_transaction(request, item_id, current_bid):
-    current_user = request.user
+def successful_transaction(request):
+    if request.method == "POST":
+        current_user = request.user
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            item_id = form.cleaned_data['item_id']
+            current_bid = form.cleaned_data['current_bid']
 
-    selected_item = get_object_or_404(Card, pk=item_id)
-    selected_item.transactions += 1
-    selected_item.last_bid = current_bid
-    selected_item.owner = current_user.user_profile.eth_address
-    selected_item.save()
+            selected_item = get_object_or_404(Card, pk=item_id)
+            selected_item.transactions += 1
+            selected_item.last_bid = float(current_bid)
+            selected_item.owner = current_user.user_profile.eth_address
+            selected_item.save()
