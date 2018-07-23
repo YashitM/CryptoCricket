@@ -3,7 +3,7 @@ $(".deletelink").hide();
 $('[name="_addanother"]').hide();
 $('[name="_continue"]').hide();
 $('.field-eth_id').hide();
-
+$('.field-transactions').hide();
 
 function hide_unhide(selection) {
 
