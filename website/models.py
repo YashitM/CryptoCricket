@@ -22,7 +22,7 @@ class Card(models.Model):
 
     name = models.CharField(max_length=100, null=False)
     description = models.TextField(max_length=3000)
-    transactions = 0
+    transactions = models.IntegerField(default=0, null=False)
     owner = models.CharField(max_length=50, default="Unassigned")
     last_bid = models.CharField(default="0", max_length=30)
     eth_id = models.IntegerField(null=True, blank=True)
@@ -38,7 +38,7 @@ class Card(models.Model):
 class Profile(models.Model):
     user = models.OneToOneField(User, unique=True, on_delete=models.CASCADE, related_name='user_profile')
     eth_address = models.CharField(max_length=43, null=False, blank=False)
-    transactions = 0
+    transactions = models.IntegerField(default=0, null=False)
 
     def __str__(self):
         return self.user.first_name + " " + self.user.last_name
