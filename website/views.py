@@ -13,24 +13,8 @@ text_p = ["Players", "Owners", "Tournaments", "Boards", "Countries", "ICCs"]
 
 
 def home(request):
-    all_players = Card.objects.all().filter(card_type=text_s[0])
-    all_owners = Card.objects.all().filter(card_type=text_s[1])
-    all_tournaments = Card.objects.all().filter(card_type=text_s[2])
-    all_boards = Card.objects.all().filter(card_type=text_s[3])
-    all_countries = Card.objects.all().filter(card_type=text_s[4])
-    all_iccs = Card.objects.all().filter(card_type=text_s[5])
-
-    context = {
-        "players": all_players[:5],
-        "owners": all_owners[:5],
-        "tournaments": all_tournaments[:5],
-        "boards": all_boards[:5],
-        "countries": all_countries[:5],
-        "iccs": all_iccs[:5],
-        "categories": text_p[:5],
-    }
-
-    return render(request, 'website/index.html', context)
+    items = Card.objects.all()
+    return render(request, 'website/index.html', {"items": items[:10], "categories": text_s})
 
 
 def register(request):
@@ -160,7 +144,7 @@ def card_details(request, item_id):
     return render(request, 'website/details.html', context=context)
 
 
-# @login_required
+@login_required
 def successful_transaction(request):
     if request.method == "POST":
         current_user = request.user
