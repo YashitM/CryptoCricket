@@ -108,7 +108,7 @@
                 <li>
                     <a href="#">Marketplace</a>
                      <ul class="sub-menu">
-                        <<li><a href="{% url 'players' %}" title="">Players</a></li>
+                        <li><a href="{% url 'players' %}" title="">Players</a></li>
                         <li><a href="{% url 'iccs' %}" title="">ICC</a></li>
                         <li><a href="{% url 'countries' %}" title="">Countries</a></li>
                         <li><a href="{% url 'boards' %}" title="">Boards</a></li>
@@ -116,27 +116,23 @@
                         <li><a href="{% url 'owners' %}" title="">Team Owners</a></li>
                     </ul>
                 </li>
-                <li class="deall">
-                    <a href="#" class="dls">Deal</a>
-                    <span class="not">Hot</span>
+                % if user.is_authenticated %}
+                <li>
+                    <a href="#">{{ user.username }}</a>
+                    <ul class="sub-menu">
+                        <li><a href="{% url 'logout' %}" title="">Logout</a></li>
+                        <li><a href="#" title="">Profile</a></li>
+                    </ul>
                 </li>
+                {% else %}
+                    <li>
+                        <a class="dls" href="{% url 'login' %}">Login</a>
+                    </li>
+                    <li>
+                        <a class="dls" href="{% url 'register' %}">Register</a>
+                    </li>
+                {% endif %}
             </ul>
-            <div class="magazi-language fst">
-                <ul>
-                    <li class="active"><a href="#" title="">English</a></li>
-                    <li><a href="#" title="">French</a></li>
-                    <li><a href="#" title="">Turkish</a></li>
-                    <li><a href="#" title="">German</a></li>
-                </ul>
-            </div><!--magazi-language end-->
-            <div class="magazi-language snd padding-bottom-20">
-                <ul>
-                    <li class="active"><a href="#" title="">GBP</a></li>
-                    <li><a href="#" title="">EUR</a></li>
-                    <li><a href="#" title="">TRY</a></li>
-                    <li><a href="#" title="">DEM</a></li>
-                </ul>
-            </div><!--magazi-language end-->
         </div><!--magazi-mobile-menu-->
     </header>
     <!-- end header-->
