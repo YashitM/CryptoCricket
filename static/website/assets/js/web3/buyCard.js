@@ -4,13 +4,24 @@
 // @param walletAddress: string: ethereum wallet address of user
 function buyCard(tokenID, price, walletAddress)
 {
+	// check network
+	var networkID = "";							// change this in the future
+	var networkName = "Ropsten Test Network";	// change this in the future
+
+	web3.version.getNetwork((err, netId) => { networkID = netId;})
+	if(networkID !== "3")
+	{
+		alert("Please Switch to the " + networkName);
+		return;
+	}
+
 	var currentAcc = "";
 	var storedAcc = walletAddress.toLowerCase();
 	web3.eth.getCoinbase(function(err,account)
 	{
 		if(err === null)
 		{
-            $('body').addClass("loading");
+           	$('body').addClass("loading");
             currentAcc = account;
 
 			var myEvent = cryptoCricketInstance.LogSnatch({},{fromBlock: web3.eth.getBlockNumber(function(error, result){ console.log(result)}), toBlock: 'latest'});
