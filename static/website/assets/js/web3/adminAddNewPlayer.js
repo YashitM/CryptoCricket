@@ -6,6 +6,17 @@ var $ = django.jQuery;
 
 function addNewCard(cardName, cardID)
 {
+	// check network
+	var networkID = "";							// change this in the future
+	var networkName = "Ropsten Test Network";	// change this in the future
+
+	web3.version.getNetwork((err, netId) => { networkID = netId;})
+	if(networkID !== "3")
+	{
+		alert("Please Switch to the " + networkName);
+		return;
+	}
+	
 	var currentAcc = "";
 	var ceoAcc = "";
 	web3.eth.getCoinbase(function(err,account)
