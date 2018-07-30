@@ -11,6 +11,8 @@ function addNewCard(cardName, cardID)
 	var networkName = "Ropsten Test Network";	// change this in the future
 
 	web3.version.getNetwork((err, netId) => { networkID = netId;})
+	console.log(networkID);
+	console.log(typeof networkID);
 	if(networkID !== "3")
 	{
 		alert("Please Switch to the " + networkName);
