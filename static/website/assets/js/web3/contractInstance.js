@@ -144,15 +144,6 @@ var cryptoCricket = web3.eth.contract([
 		"type": "function"
 	},
 	{
-		"constant": false,
-		"inputs": [],
-		"name": "withdraw",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"constant": true,
 		"inputs": [
 			{
@@ -372,25 +363,6 @@ var cryptoCricket = web3.eth.contract([
 		"type": "function"
 	},
 	{
-		"constant": true,
-		"inputs": [
-			{
-				"name": "_account",
-				"type": "address"
-			}
-		],
-		"name": "pendingWithdrawals",
-		"outputs": [
-			{
-				"name": "_amount",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"name": "_ceo",
@@ -491,23 +463,6 @@ var cryptoCricket = web3.eth.contract([
 		"anonymous": false,
 		"inputs": [
 			{
-				"indexed": false,
-				"name": "owner",
-				"type": "address"
-			},
-			{
-				"indexed": false,
-				"name": "amount",
-				"type": "uint256"
-			}
-		],
-		"name": "LogWithdrawal",
-		"type": "event"
-	},
-	{
-		"anonymous": false,
-		"inputs": [
-			{
 				"indexed": true,
 				"name": "owner",
 				"type": "address"
@@ -528,6 +483,6 @@ var cryptoCricket = web3.eth.contract([
 	}
 ]);
 
-var contractAddress = "0xc49ef2d63baddfbe4a593057041ee98e33ba982b";
+var contractAddress = "0xd14acee54c675d0a604cd0fee55e9f69db154138";
 
 var cryptoCricketInstance = cryptoCricket.at(contractAddress);
