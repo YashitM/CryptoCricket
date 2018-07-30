@@ -7,13 +7,12 @@ var $ = django.jQuery;
 function addNewCard(cardName, cardID)
 {
 	// check network
-	var networkID = "";							// change this in the future
+	var networkID = web3.version.network;
 	var networkName = "Ropsten Test Network";	// change this in the future
 
-	web3.version.getNetwork((err, netId) => { networkID = netId;})
 	console.log(networkID);
 	console.log(typeof networkID);
-	if(networkID !== "3")
+	if(networkID !== "3")						// change this in the future
 	{
 		alert("Please Switch to the " + networkName);
 		return;
