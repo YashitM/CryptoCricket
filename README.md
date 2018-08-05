@@ -13,7 +13,7 @@ Link to the website: [http://cricket4crypto.com](http://cricket4crypto.com)
   - [Installation Guide](https://medium.com/@mail.bahurudeen/setup-a-metamask-ethereum-wallet-and-use-it-to-send-and-receive-ether-4f3b99360e4f)
 
 ## How to Buy a Card
-* Go to the URL: http://cricket4crypto.com, and login/registr with your ETH wallet address.
+* Go to the URL: http://cricket4crypto.com, and login/register with your ETH wallet address.
 * Choose your favourite player, check it's price, and click on `Buy Now`.
 * In the metamask notification that pops us, set an appropriate gas price and `Accept` the transaction.
 * As soon as the transaction is mined and included in a block, the page will automatically reload.
