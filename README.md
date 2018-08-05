@@ -44,3 +44,18 @@ Link to the website: [yashitm.pythonanywhere.com](yashitm.pythonanywhere.com)
 |   country	|   last_name	|
 |   	|  eth_address 	|
 |   	|  transactions 	|
+
+### Edit DB Structure
+
+* Clone the Repository and move to the `CryptoCricket/website` directory.
+* Open the `models.py` file.
+* To Change:
+  * User Profile: Scroll to the `Profile` Class
+  * Card: Scroll to the `Card` Class.
+* Add/Edit the fields required (according to the documentation: https://docs.djangoproject.com/en/2.1/topics/db/models/), under the corresponding class.
+* Open a terminal in the main Directory (inside `CryptoCricket` folder)
+* Enter the following commands:
+  ```
+  python manage.py makemigrations website
+  python manage.py migrate
+  ```
