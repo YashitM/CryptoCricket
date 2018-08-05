@@ -29,5 +29,18 @@ Link to the website: [yashitm.pythonanywhere.com](yashitm.pythonanywhere.com)
 
 ## DB Structure
 
-
-
+|  Card 	| User  	|
+|---	|---	|
+|  id	|  id 	|
+|  card_type 	|  password 	|
+|   name	|  last_login 	|
+|   description	|  is_superuser 	|
+|   transactions	|  username 	|
+|   owner	|  first_name 	|
+|   last_bid	|  email 	|
+|   eth_id	|  is_staff 	|
+|   image	|   is_active	|
+|   icc_ranking	|   date_joined	|
+|   country	|   last_name	|
+|   	|  eth_address 	|
+|   	|  transactions 	|
