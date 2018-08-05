@@ -5,11 +5,12 @@
 function buyCard(tokenID, price, walletAddress)
 {
 	// check network
-	var networkID = "";							// change this in the future
+	var networkID = web3.version.network;
 	var networkName = "Ropsten Test Network";	// change this in the future
 
-	web3.version.getNetwork((err, netId) => { networkID = netId;})
-	if(networkID !== "3")
+	console.log(networkID);
+	console.log(typeof networkID);
+	if(networkID !== "3")						// change this in the future
 	{
 		alert("Please Switch to the " + networkName);
 		return;
