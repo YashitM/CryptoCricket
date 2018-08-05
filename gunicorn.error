@@ -1,0 +1,158 @@
+[2018-08-05 05:52:48 -0400] [31451] [INFO] Starting gunicorn 19.9.0
+[2018-08-05 05:52:48 -0400] [31451] [INFO] Listening at: http://127.0.0.1:8000 (31451)
+[2018-08-05 05:52:48 -0400] [31451] [INFO] Using worker: sync
+[2018-08-05 05:52:48 -0400] [31454] [INFO] Booting worker with pid: 31454
+[2018-08-05 05:52:48 -0400] [31455] [INFO] Booting worker with pid: 31455
+[2018-08-05 05:52:48 -0400] [31456] [INFO] Booting worker with pid: 31456
+[2018-08-05 05:52:48 -0400] [31458] [INFO] Booting worker with pid: 31458
+[2018-08-05 05:52:48 -0400] [31461] [INFO] Booting worker with pid: 31461
+[2018-08-05 05:52:48 -0400] [31462] [INFO] Booting worker with pid: 31462
+[2018-08-05 05:52:48 -0400] [31466] [INFO] Booting worker with pid: 31466
+[2018-08-05 05:52:48 -0400] [31468] [INFO] Booting worker with pid: 31468
+[2018-08-05 05:52:48 -0400] [31469] [INFO] Booting worker with pid: 31469
+[2018-08-05 05:52:48 -0400] [31470] [INFO] Booting worker with pid: 31470
+[2018-08-05 05:52:49 -0400] [31474] [INFO] Booting worker with pid: 31474
+[2018-08-05 05:52:49 -0400] [31475] [INFO] Booting worker with pid: 31475
+[2018-08-05 05:52:49 -0400] [31477] [INFO] Booting worker with pid: 31477
+[2018-08-05 05:52:49 -0400] [31479] [INFO] Booting worker with pid: 31479
+[2018-08-05 05:52:49 -0400] [31480] [INFO] Booting worker with pid: 31480
+[2018-08-05 05:52:49 -0400] [31483] [INFO] Booting worker with pid: 31483
+[2018-08-05 05:52:49 -0400] [31485] [INFO] Booting worker with pid: 31485
+[2018-08-05 05:52:49 -0400] [31487] [INFO] Booting worker with pid: 31487
+[2018-08-05 05:52:49 -0400] [31490] [INFO] Booting worker with pid: 31490
+[2018-08-05 05:52:49 -0400] [31492] [INFO] Booting worker with pid: 31492
+[2018-08-05 05:52:49 -0400] [31493] [INFO] Booting worker with pid: 31493
+[2018-08-05 05:52:49 -0400] [31495] [INFO] Booting worker with pid: 31495
+[2018-08-05 05:52:49 -0400] [31498] [INFO] Booting worker with pid: 31498
+[2018-08-05 05:52:49 -0400] [31499] [INFO] Booting worker with pid: 31499
+[2018-08-05 05:52:49 -0400] [31502] [INFO] Booting worker with pid: 31502
+[2018-08-05 05:52:49 -0400] [31503] [INFO] Booting worker with pid: 31503
+[2018-08-05 05:52:49 -0400] [31506] [INFO] Booting worker with pid: 31506
+[2018-08-05 05:52:50 -0400] [31507] [INFO] Booting worker with pid: 31507
+[2018-08-05 05:52:50 -0400] [31510] [INFO] Booting worker with pid: 31510
+[2018-08-05 05:52:50 -0400] [31511] [INFO] Booting worker with pid: 31511
+[2018-08-05 05:52:50 -0400] [31513] [INFO] Booting worker with pid: 31513
+[2018-08-05 05:52:50 -0400] [31515] [INFO] Booting worker with pid: 31515
+[2018-08-05 05:52:50 -0400] [31517] [INFO] Booting worker with pid: 31517
+[2018-08-05 05:52:50 -0400] [31518] [INFO] Booting worker with pid: 31518
+[2018-08-05 05:52:50 -0400] [31519] [INFO] Booting worker with pid: 31519
+[2018-08-05 05:52:50 -0400] [31523] [INFO] Booting worker with pid: 31523
+[2018-08-05 05:52:50 -0400] [31525] [INFO] Booting worker with pid: 31525
+[2018-08-05 05:52:50 -0400] [31526] [INFO] Booting worker with pid: 31526
+[2018-08-05 05:52:50 -0400] [31527] [INFO] Booting worker with pid: 31527
+[2018-08-05 05:52:50 -0400] [31528] [INFO] Booting worker with pid: 31528
+[2018-08-05 05:52:50 -0400] [31529] [INFO] Booting worker with pid: 31529
+[2018-08-05 05:52:50 -0400] [31530] [INFO] Booting worker with pid: 31530
+[2018-08-05 05:52:50 -0400] [31535] [INFO] Booting worker with pid: 31535
+[2018-08-05 05:52:50 -0400] [31537] [INFO] Booting worker with pid: 31537
+[2018-08-05 05:52:51 -0400] [31539] [INFO] Booting worker with pid: 31539
+[2018-08-05 05:52:51 -0400] [31541] [INFO] Booting worker with pid: 31541
+[2018-08-05 05:52:51 -0400] [31543] [INFO] Booting worker with pid: 31543
+[2018-08-05 05:52:51 -0400] [31544] [INFO] Booting worker with pid: 31544
+[2018-08-05 05:52:51 -0400] [31546] [INFO] Booting worker with pid: 31546
+[2018-08-05 05:52:51 -0400] [31547] [INFO] Booting worker with pid: 31547
+[2018-08-05 05:53:44 -0400] [31451] [INFO] Handling signal: int
+[2018-08-05 09:53:44 +0000] [31502] [INFO] Worker exiting (pid: 31502)
+[2018-08-05 09:53:44 +0000] [31506] [INFO] Worker exiting (pid: 31506)
+[2018-08-05 09:53:44 +0000] [31510] [INFO] Worker exiting (pid: 31510)
+[2018-08-05 09:53:44 +0000] [31535] [INFO] Worker exiting (pid: 31535)
+[2018-08-05 09:53:44 +0000] [31519] [INFO] Worker exiting (pid: 31519)
+[2018-08-05 09:53:44 +0000] [31487] [INFO] Worker exiting (pid: 31487)
+[2018-08-05 09:53:44 +0000] [31499] [INFO] Worker exiting (pid: 31499)
+[2018-08-05 09:53:44 +0000] [31544] [INFO] Worker exiting (pid: 31544)
+[2018-08-05 09:53:44 +0000] [31475] [INFO] Worker exiting (pid: 31475)
+[2018-08-05 09:53:44 +0000] [31493] [INFO] Worker exiting (pid: 31493)
+[2018-08-05 09:53:44 +0000] [31485] [INFO] Worker exiting (pid: 31485)
+[2018-08-05 09:53:44 +0000] [31468] [INFO] Worker exiting (pid: 31468)
+[2018-08-05 09:53:44 +0000] [31483] [INFO] Worker exiting (pid: 31483)
+[2018-08-05 09:53:44 +0000] [31503] [INFO] Worker exiting (pid: 31503)
+[2018-08-05 09:53:44 +0000] [31525] [INFO] Worker exiting (pid: 31525)
+[2018-08-05 09:53:44 +0000] [31469] [INFO] Worker exiting (pid: 31469)
+[2018-08-05 09:53:44 +0000] [31523] [INFO] Worker exiting (pid: 31523)
+[2018-08-05 09:53:44 +0000] [31477] [INFO] Worker exiting (pid: 31477)
+[2018-08-05 09:53:44 +0000] [31454] [INFO] Worker exiting (pid: 31454)
+[2018-08-05 09:53:44 +0000] [31530] [INFO] Worker exiting (pid: 31530)
+[2018-08-05 09:53:44 +0000] [31547] [INFO] Worker exiting (pid: 31547)
+[2018-08-05 09:53:44 +0000] [31518] [INFO] Worker exiting (pid: 31518)
+[2018-08-05 09:53:44 +0000] [31462] [INFO] Worker exiting (pid: 31462)
+[2018-08-05 09:53:44 +0000] [31546] [INFO] Worker exiting (pid: 31546)
+[2018-08-05 09:53:44 +0000] [31456] [INFO] Worker exiting (pid: 31456)
+[2018-08-05 09:53:44 +0000] [31461] [INFO] Worker exiting (pid: 31461)
+[2018-08-05 09:53:44 +0000] [31466] [INFO] Worker exiting (pid: 31466)
+[2018-08-05 09:53:44 +0000] [31492] [INFO] Worker exiting (pid: 31492)
+[2018-08-05 09:53:44 +0000] [31507] [INFO] Worker exiting (pid: 31507)
+[2018-08-05 09:53:44 +0000] [31541] [INFO] Worker exiting (pid: 31541)
+[2018-08-05 09:53:44 +0000] [31513] [INFO] Worker exiting (pid: 31513)
+[2018-08-05 09:53:44 +0000] [31470] [INFO] Worker exiting (pid: 31470)
+[2018-08-05 09:53:44 +0000] [31517] [INFO] Worker exiting (pid: 31517)
+[2018-08-05 09:53:44 +0000] [31511] [INFO] Worker exiting (pid: 31511)
+[2018-08-05 09:53:44 +0000] [31495] [INFO] Worker exiting (pid: 31495)
+[2018-08-05 09:53:44 +0000] [31515] [INFO] Worker exiting (pid: 31515)
+[2018-08-05 09:53:44 +0000] [31527] [INFO] Worker exiting (pid: 31527)
+[2018-08-05 09:53:44 +0000] [31526] [INFO] Worker exiting (pid: 31526)
+[2018-08-05 09:53:44 +0000] [31537] [INFO] Worker exiting (pid: 31537)
+[2018-08-05 09:53:44 +0000] [31529] [INFO] Worker exiting (pid: 31529)
+[2018-08-05 09:53:44 +0000] [31528] [INFO] Worker exiting (pid: 31528)
+[2018-08-05 09:53:44 +0000] [31490] [INFO] Worker exiting (pid: 31490)
+[2018-08-05 09:53:44 +0000] [31539] [INFO] Worker exiting (pid: 31539)
+[2018-08-05 09:53:44 +0000] [31498] [INFO] Worker exiting (pid: 31498)
+[2018-08-05 09:53:44 +0000] [31543] [INFO] Worker exiting (pid: 31543)
+[2018-08-05 09:53:44 +0000] [31480] [INFO] Worker exiting (pid: 31480)
+[2018-08-05 09:53:44 +0000] [31474] [INFO] Worker exiting (pid: 31474)
+[2018-08-05 09:53:44 +0000] [31458] [INFO] Worker exiting (pid: 31458)
+[2018-08-05 09:53:44 +0000] [31479] [INFO] Worker exiting (pid: 31479)
+[2018-08-05 09:53:44 +0000] [31455] [INFO] Worker exiting (pid: 31455)
+[2018-08-05 05:53:47 -0400] [31451] [INFO] Shutting down: Master
+[2018-08-05 05:53:49 -0400] [31558] [INFO] Starting gunicorn 19.9.0
+[2018-08-05 05:53:49 -0400] [31558] [INFO] Listening at: http://127.0.0.1:8000 (31558)
+[2018-08-05 05:53:49 -0400] [31558] [INFO] Using worker: sync
+[2018-08-05 05:53:49 -0400] [31561] [INFO] Booting worker with pid: 31561
+[2018-08-05 05:53:49 -0400] [31562] [INFO] Booting worker with pid: 31562
+[2018-08-05 05:53:49 -0400] [31564] [INFO] Booting worker with pid: 31564
+[2018-08-05 05:53:49 -0400] [31565] [INFO] Booting worker with pid: 31565
+[2018-08-05 05:53:49 -0400] [31566] [INFO] Booting worker with pid: 31566
+[2018-08-05 05:53:49 -0400] [31571] [INFO] Booting worker with pid: 31571
+[2018-08-05 05:53:49 -0400] [31572] [INFO] Booting worker with pid: 31572
+[2018-08-05 05:53:50 -0400] [31575] [INFO] Booting worker with pid: 31575
+[2018-08-05 05:53:50 -0400] [31576] [INFO] Booting worker with pid: 31576
+[2018-08-05 05:53:50 -0400] [31578] [INFO] Booting worker with pid: 31578
+[2018-08-05 05:53:50 -0400] [31580] [INFO] Booting worker with pid: 31580
+[2018-08-05 05:53:50 -0400] [31581] [INFO] Booting worker with pid: 31581
+[2018-08-05 05:53:50 -0400] [31583] [INFO] Booting worker with pid: 31583
+[2018-08-05 05:53:50 -0400] [31586] [INFO] Booting worker with pid: 31586
+[2018-08-05 05:53:50 -0400] [31588] [INFO] Booting worker with pid: 31588
+[2018-08-05 05:53:50 -0400] [31589] [INFO] Booting worker with pid: 31589
+[2018-08-05 05:53:50 -0400] [31593] [INFO] Booting worker with pid: 31593
+[2018-08-05 05:53:50 -0400] [31594] [INFO] Booting worker with pid: 31594
+[2018-08-05 05:53:50 -0400] [31595] [INFO] Booting worker with pid: 31595
+[2018-08-05 05:53:50 -0400] [31599] [INFO] Booting worker with pid: 31599
+[2018-08-05 05:53:50 -0400] [31600] [INFO] Booting worker with pid: 31600
+[2018-08-05 05:53:50 -0400] [31602] [INFO] Booting worker with pid: 31602
+[2018-08-05 05:53:50 -0400] [31604] [INFO] Booting worker with pid: 31604
+[2018-08-05 05:53:50 -0400] [31606] [INFO] Booting worker with pid: 31606
+[2018-08-05 05:53:50 -0400] [31608] [INFO] Booting worker with pid: 31608
+[2018-08-05 05:53:50 -0400] [31610] [INFO] Booting worker with pid: 31610
+[2018-08-05 05:53:51 -0400] [31613] [INFO] Booting worker with pid: 31613
+[2018-08-05 05:53:51 -0400] [31614] [INFO] Booting worker with pid: 31614
+[2018-08-05 05:53:51 -0400] [31617] [INFO] Booting worker with pid: 31617
+[2018-08-05 05:53:51 -0400] [31618] [INFO] Booting worker with pid: 31618
+[2018-08-05 05:53:51 -0400] [31620] [INFO] Booting worker with pid: 31620
+[2018-08-05 05:53:51 -0400] [31622] [INFO] Booting worker with pid: 31622
+[2018-08-05 05:53:51 -0400] [31624] [INFO] Booting worker with pid: 31624
+[2018-08-05 05:53:51 -0400] [31625] [INFO] Booting worker with pid: 31625
+[2018-08-05 05:53:51 -0400] [31629] [INFO] Booting worker with pid: 31629
+[2018-08-05 05:53:51 -0400] [31630] [INFO] Booting worker with pid: 31630
+[2018-08-05 05:53:51 -0400] [31632] [INFO] Booting worker with pid: 31632
+[2018-08-05 05:53:51 -0400] [31635] [INFO] Booting worker with pid: 31635
+[2018-08-05 05:53:51 -0400] [31636] [INFO] Booting worker with pid: 31636
+[2018-08-05 05:53:51 -0400] [31639] [INFO] Booting worker with pid: 31639
+[2018-08-05 05:53:51 -0400] [31640] [INFO] Booting worker with pid: 31640
+[2018-08-05 05:53:51 -0400] [31643] [INFO] Booting worker with pid: 31643
+[2018-08-05 05:53:51 -0400] [31644] [INFO] Booting worker with pid: 31644
+[2018-08-05 05:53:51 -0400] [31646] [INFO] Booting worker with pid: 31646
+[2018-08-05 05:53:51 -0400] [31647] [INFO] Booting worker with pid: 31647
+[2018-08-05 05:53:52 -0400] [31649] [INFO] Booting worker with pid: 31649
+[2018-08-05 05:53:52 -0400] [31653] [INFO] Booting worker with pid: 31653
+[2018-08-05 05:53:52 -0400] [31655] [INFO] Booting worker with pid: 31655
+[2018-08-05 05:53:52 -0400] [31656] [INFO] Booting worker with pid: 31656
+[2018-08-05 05:53:52 -0400] [31659] [INFO] Booting worker with pid: 31659
