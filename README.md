@@ -70,9 +70,9 @@ Link to the website: [http://cricket4crypto.com](http://cricket4crypto.com)
   python manage.py migrate
   ```
   
-  ## Sync Server with Git
-  
-  * Type `screen -r gunicorn` on the terminal.
-  * Pull from the Git Repository using `git pull`.
-  * Type `./run.sh` to fire up the server.
-  * Type `ctrl + a`, followed by `d` to exit from the Screen.
+## Sync Server with Git
+
+* Type `screen -r gunicorn` on the terminal.
+* Pull from the Git Repository using `git pull`.
+* Type `./run.sh` to fire up the server.
+* Type `ctrl + a`, followed by `d` to exit from the Screen.
