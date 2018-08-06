@@ -156,3 +156,162 @@
 [2018-08-05 05:53:52 -0400] [31655] [INFO] Booting worker with pid: 31655
 [2018-08-05 05:53:52 -0400] [31656] [INFO] Booting worker with pid: 31656
 [2018-08-05 05:53:52 -0400] [31659] [INFO] Booting worker with pid: 31659
+[2018-08-06 15:13:01 -0400] [31558] [INFO] Handling signal: winch
+[2018-08-06 15:13:06 -0400] [31558] [INFO] Handling signal: winch
+[2018-08-06 15:14:29 -0400] [31558] [INFO] Handling signal: int
+[2018-08-06 19:14:29 +0000] [31649] [INFO] Worker exiting (pid: 31649)
+[2018-08-06 19:14:29 +0000] [31655] [INFO] Worker exiting (pid: 31655)
+[2018-08-06 19:14:29 +0000] [31647] [INFO] Worker exiting (pid: 31647)
+[2018-08-06 19:14:29 +0000] [31644] [INFO] Worker exiting (pid: 31644)
+[2018-08-06 19:14:29 +0000] [31566] [INFO] Worker exiting (pid: 31566)
+[2018-08-06 19:14:29 +0000] [31659] [INFO] Worker exiting (pid: 31659)
+[2018-08-06 19:14:29 +0000] [31602] [INFO] Worker exiting (pid: 31602)
+[2018-08-06 19:14:29 +0000] [31572] [INFO] Worker exiting (pid: 31572)
+[2018-08-06 19:14:29 +0000] [31625] [INFO] Worker exiting (pid: 31625)
+[2018-08-06 19:14:29 +0000] [31620] [INFO] Worker exiting (pid: 31620)
+[2018-08-06 19:14:29 +0000] [31578] [INFO] Worker exiting (pid: 31578)
+[2018-08-06 19:14:29 +0000] [31646] [INFO] Worker exiting (pid: 31646)
+[2018-08-06 19:14:29 +0000] [31576] [INFO] Worker exiting (pid: 31576)
+[2018-08-06 19:14:29 +0000] [31564] [INFO] Worker exiting (pid: 31564)
+[2018-08-06 19:14:29 +0000] [31606] [INFO] Worker exiting (pid: 31606)
+[2018-08-06 19:14:29 +0000] [31653] [INFO] Worker exiting (pid: 31653)
+[2018-08-06 19:14:29 +0000] [31643] [INFO] Worker exiting (pid: 31643)
+[2018-08-06 19:14:29 +0000] [31595] [INFO] Worker exiting (pid: 31595)
+[2018-08-06 19:14:29 +0000] [31580] [INFO] Worker exiting (pid: 31580)
+[2018-08-06 19:14:29 +0000] [31562] [INFO] Worker exiting (pid: 31562)
+[2018-08-06 19:14:29 +0000] [31640] [INFO] Worker exiting (pid: 31640)
+[2018-08-06 19:14:29 +0000] [31561] [INFO] Worker exiting (pid: 31561)
+[2018-08-06 19:14:29 +0000] [31589] [INFO] Worker exiting (pid: 31589)
+[2018-08-06 19:14:29 +0000] [31639] [INFO] Worker exiting (pid: 31639)
+[2018-08-06 19:14:29 +0000] [31636] [INFO] Worker exiting (pid: 31636)
+[2018-08-06 19:14:29 +0000] [31635] [INFO] Worker exiting (pid: 31635)
+[2018-08-06 19:14:29 +0000] [31622] [INFO] Worker exiting (pid: 31622)
+[2018-08-06 19:14:29 +0000] [31575] [INFO] Worker exiting (pid: 31575)
+[2018-08-06 19:14:29 +0000] [31610] [INFO] Worker exiting (pid: 31610)
+[2018-08-06 19:14:29 +0000] [31656] [INFO] Worker exiting (pid: 31656)
+[2018-08-06 19:14:29 +0000] [31613] [INFO] Worker exiting (pid: 31613)
+[2018-08-06 19:14:29 +0000] [31604] [INFO] Worker exiting (pid: 31604)
+[2018-08-06 19:14:29 +0000] [31614] [INFO] Worker exiting (pid: 31614)
+[2018-08-06 19:14:29 +0000] [31617] [INFO] Worker exiting (pid: 31617)
+[2018-08-06 19:14:29 +0000] [31581] [INFO] Worker exiting (pid: 31581)
+[2018-08-06 19:14:29 +0000] [31600] [INFO] Worker exiting (pid: 31600)
+[2018-08-06 19:14:29 +0000] [31571] [INFO] Worker exiting (pid: 31571)
+[2018-08-06 19:14:29 +0000] [31599] [INFO] Worker exiting (pid: 31599)
+[2018-08-06 19:14:29 +0000] [31632] [INFO] Worker exiting (pid: 31632)
+[2018-08-06 19:14:29 +0000] [31629] [INFO] Worker exiting (pid: 31629)
+[2018-08-06 19:14:29 +0000] [31594] [INFO] Worker exiting (pid: 31594)
+[2018-08-06 19:14:29 +0000] [31586] [INFO] Worker exiting (pid: 31586)
+[2018-08-06 19:14:29 +0000] [31630] [INFO] Worker exiting (pid: 31630)
+[2018-08-06 19:14:29 +0000] [31624] [INFO] Worker exiting (pid: 31624)
+[2018-08-06 19:14:29 +0000] [31593] [INFO] Worker exiting (pid: 31593)
+[2018-08-06 19:14:29 +0000] [31588] [INFO] Worker exiting (pid: 31588)
+[2018-08-06 19:14:29 +0000] [31618] [INFO] Worker exiting (pid: 31618)
+[2018-08-06 19:14:29 +0000] [31583] [INFO] Worker exiting (pid: 31583)
+[2018-08-06 19:14:29 +0000] [31565] [INFO] Worker exiting (pid: 31565)
+[2018-08-06 19:14:29 +0000] [31608] [INFO] Worker exiting (pid: 31608)
+[2018-08-06 15:14:30 -0400] [31558] [INFO] Shutting down: Master
+[2018-08-06 15:15:13 -0400] [20846] [INFO] Starting gunicorn 19.9.0
+[2018-08-06 15:15:13 -0400] [20846] [INFO] Listening at: http://127.0.0.1:8000 (20846)
+[2018-08-06 15:15:13 -0400] [20846] [INFO] Using worker: sync
+[2018-08-06 15:15:13 -0400] [20849] [INFO] Booting worker with pid: 20849
+[2018-08-06 15:15:13 -0400] [20850] [INFO] Booting worker with pid: 20850
+[2018-08-06 15:15:13 -0400] [20851] [INFO] Booting worker with pid: 20851
+[2018-08-06 15:15:13 -0400] [20852] [INFO] Booting worker with pid: 20852
+[2018-08-06 15:15:14 -0400] [20857] [INFO] Booting worker with pid: 20857
+[2018-08-06 15:15:14 -0400] [20858] [INFO] Booting worker with pid: 20858
+[2018-08-06 15:15:14 -0400] [20859] [INFO] Booting worker with pid: 20859
+[2018-08-06 15:15:14 -0400] [20862] [INFO] Booting worker with pid: 20862
+[2018-08-06 15:15:14 -0400] [20864] [INFO] Booting worker with pid: 20864
+[2018-08-06 15:15:14 -0400] [20865] [INFO] Booting worker with pid: 20865
+[2018-08-06 15:15:14 -0400] [20868] [INFO] Booting worker with pid: 20868
+[2018-08-06 15:15:14 -0400] [20869] [INFO] Booting worker with pid: 20869
+[2018-08-06 15:15:14 -0400] [20871] [INFO] Booting worker with pid: 20871
+[2018-08-06 15:15:14 -0400] [20875] [INFO] Booting worker with pid: 20875
+[2018-08-06 15:15:14 -0400] [20876] [INFO] Booting worker with pid: 20876
+[2018-08-06 15:15:14 -0400] [20877] [INFO] Booting worker with pid: 20877
+[2018-08-06 15:15:14 -0400] [20880] [INFO] Booting worker with pid: 20880
+[2018-08-06 15:15:14 -0400] [20882] [INFO] Booting worker with pid: 20882
+[2018-08-06 15:15:14 -0400] [20884] [INFO] Booting worker with pid: 20884
+[2018-08-06 15:15:14 -0400] [20886] [INFO] Booting worker with pid: 20886
+[2018-08-06 15:15:14 -0400] [20887] [INFO] Booting worker with pid: 20887
+[2018-08-06 15:15:15 -0400] [20890] [INFO] Booting worker with pid: 20890
+[2018-08-06 15:15:15 -0400] [20891] [INFO] Booting worker with pid: 20891
+[2018-08-06 15:15:15 -0400] [20893] [INFO] Booting worker with pid: 20893
+[2018-08-06 15:15:15 -0400] [20895] [INFO] Booting worker with pid: 20895
+[2018-08-06 15:15:15 -0400] [20896] [INFO] Booting worker with pid: 20896
+[2018-08-06 15:15:15 -0400] [20899] [INFO] Booting worker with pid: 20899
+[2018-08-06 15:15:15 -0400] [20901] [INFO] Booting worker with pid: 20901
+[2018-08-06 15:15:15 -0400] [20903] [INFO] Booting worker with pid: 20903
+[2018-08-06 15:15:15 -0400] [20906] [INFO] Booting worker with pid: 20906
+[2018-08-06 15:15:15 -0400] [20907] [INFO] Booting worker with pid: 20907
+[2018-08-06 15:15:15 -0400] [20909] [INFO] Booting worker with pid: 20909
+[2018-08-06 15:15:15 -0400] [20910] [INFO] Booting worker with pid: 20910
+[2018-08-06 15:15:15 -0400] [20912] [INFO] Booting worker with pid: 20912
+[2018-08-06 15:15:15 -0400] [20915] [INFO] Booting worker with pid: 20915
+[2018-08-06 15:15:15 -0400] [20917] [INFO] Booting worker with pid: 20917
+[2018-08-06 15:15:15 -0400] [20918] [INFO] Booting worker with pid: 20918
+[2018-08-06 15:15:15 -0400] [20920] [INFO] Booting worker with pid: 20920
+[2018-08-06 15:15:15 -0400] [20922] [INFO] Booting worker with pid: 20922
+[2018-08-06 15:15:16 -0400] [20923] [INFO] Booting worker with pid: 20923
+[2018-08-06 15:15:16 -0400] [20926] [INFO] Booting worker with pid: 20926
+[2018-08-06 15:15:16 -0400] [20927] [INFO] Booting worker with pid: 20927
+[2018-08-06 15:15:16 -0400] [20930] [INFO] Booting worker with pid: 20930
+[2018-08-06 15:15:16 -0400] [20931] [INFO] Booting worker with pid: 20931
+[2018-08-06 15:15:16 -0400] [20932] [INFO] Booting worker with pid: 20932
+[2018-08-06 15:15:16 -0400] [20933] [INFO] Booting worker with pid: 20933
+[2018-08-06 15:15:16 -0400] [20934] [INFO] Booting worker with pid: 20934
+[2018-08-06 15:15:16 -0400] [20935] [INFO] Booting worker with pid: 20935
+[2018-08-06 15:15:16 -0400] [20939] [INFO] Booting worker with pid: 20939
+[2018-08-06 15:15:16 -0400] [20941] [INFO] Booting worker with pid: 20941
+[2018-08-06 15:15:28 -0400] [20846] [INFO] Handling signal: int
+[2018-08-06 19:15:28 +0000] [20880] [INFO] Worker exiting (pid: 20880)
+[2018-08-06 19:15:28 +0000] [20884] [INFO] Worker exiting (pid: 20884)
+[2018-08-06 19:15:28 +0000] [20918] [INFO] Worker exiting (pid: 20918)
+[2018-08-06 19:15:28 +0000] [20901] [INFO] Worker exiting (pid: 20901)
+[2018-08-06 19:15:28 +0000] [20882] [INFO] Worker exiting (pid: 20882)
+[2018-08-06 19:15:28 +0000] [20862] [INFO] Worker exiting (pid: 20862)
+[2018-08-06 19:15:28 +0000] [20887] [INFO] Worker exiting (pid: 20887)
+[2018-08-06 19:15:28 +0000] [20877] [INFO] Worker exiting (pid: 20877)
+[2018-08-06 19:15:28 +0000] [20912] [INFO] Worker exiting (pid: 20912)
+[2018-08-06 19:15:28 +0000] [20906] [INFO] Worker exiting (pid: 20906)
+[2018-08-06 19:15:28 +0000] [20851] [INFO] Worker exiting (pid: 20851)
+[2018-08-06 19:15:28 +0000] [20907] [INFO] Worker exiting (pid: 20907)
+[2018-08-06 19:15:28 +0000] [20864] [INFO] Worker exiting (pid: 20864)
+[2018-08-06 19:15:28 +0000] [20893] [INFO] Worker exiting (pid: 20893)
+[2018-08-06 19:15:28 +0000] [20859] [INFO] Worker exiting (pid: 20859)
+[2018-08-06 19:15:28 +0000] [20895] [INFO] Worker exiting (pid: 20895)
+[2018-08-06 19:15:28 +0000] [20922] [INFO] Worker exiting (pid: 20922)
+[2018-08-06 19:15:28 +0000] [20909] [INFO] Worker exiting (pid: 20909)
+[2018-08-06 19:15:28 +0000] [20858] [INFO] Worker exiting (pid: 20858)
+[2018-08-06 19:15:28 +0000] [20865] [INFO] Worker exiting (pid: 20865)
+[2018-08-06 19:15:28 +0000] [20886] [INFO] Worker exiting (pid: 20886)
+[2018-08-06 19:15:28 +0000] [20931] [INFO] Worker exiting (pid: 20931)
+[2018-08-06 19:15:28 +0000] [20935] [INFO] Worker exiting (pid: 20935)
+[2018-08-06 19:15:28 +0000] [20857] [INFO] Worker exiting (pid: 20857)
+[2018-08-06 19:15:28 +0000] [20915] [INFO] Worker exiting (pid: 20915)
+[2018-08-06 19:15:28 +0000] [20917] [INFO] Worker exiting (pid: 20917)
+[2018-08-06 19:15:28 +0000] [20903] [INFO] Worker exiting (pid: 20903)
+[2018-08-06 19:15:28 +0000] [20920] [INFO] Worker exiting (pid: 20920)
+[2018-08-06 19:15:28 +0000] [20910] [INFO] Worker exiting (pid: 20910)
+[2018-08-06 19:15:28 +0000] [20890] [INFO] Worker exiting (pid: 20890)
+[2018-08-06 19:15:28 +0000] [20852] [INFO] Worker exiting (pid: 20852)
+[2018-08-06 19:15:28 +0000] [20899] [INFO] Worker exiting (pid: 20899)
+[2018-08-06 19:15:28 +0000] [20896] [INFO] Worker exiting (pid: 20896)
+[2018-08-06 19:15:28 +0000] [20850] [INFO] Worker exiting (pid: 20850)
+[2018-08-06 19:15:28 +0000] [20869] [INFO] Worker exiting (pid: 20869)
+[2018-08-06 19:15:28 +0000] [20934] [INFO] Worker exiting (pid: 20934)
+[2018-08-06 19:15:28 +0000] [20926] [INFO] Worker exiting (pid: 20926)
+[2018-08-06 19:15:28 +0000] [20930] [INFO] Worker exiting (pid: 20930)
+[2018-08-06 19:15:28 +0000] [20868] [INFO] Worker exiting (pid: 20868)
+[2018-08-06 19:15:28 +0000] [20871] [INFO] Worker exiting (pid: 20871)
+[2018-08-06 19:15:28 +0000] [20891] [INFO] Worker exiting (pid: 20891)
+[2018-08-06 19:15:28 +0000] [20939] [INFO] Worker exiting (pid: 20939)
+[2018-08-06 19:15:28 +0000] [20927] [INFO] Worker exiting (pid: 20927)
+[2018-08-06 19:15:28 +0000] [20849] [INFO] Worker exiting (pid: 20849)
+[2018-08-06 19:15:28 +0000] [20932] [INFO] Worker exiting (pid: 20932)
+[2018-08-06 19:15:28 +0000] [20933] [INFO] Worker exiting (pid: 20933)
+[2018-08-06 19:15:28 +0000] [20875] [INFO] Worker exiting (pid: 20875)
+[2018-08-06 19:15:28 +0000] [20876] [INFO] Worker exiting (pid: 20876)
+[2018-08-06 19:15:28 +0000] [20941] [INFO] Worker exiting (pid: 20941)
+[2018-08-06 19:15:28 +0000] [20923] [INFO] Worker exiting (pid: 20923)
+[2018-08-06 15:15:29 -0400] [20846] [INFO] Shutting down: Master
