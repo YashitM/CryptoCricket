@@ -92,22 +92,23 @@ function addNewCard(cardName, cardID)
 }
 
 $('input[name="_save"]').click(function(event) {
+	if(!window.location.href.includes("change")) {
+		var cardName = document.getElementById("id_name").value;
+		var cardType = $("#id_card_type :selected").text();
+		var id;
+		if(cardType === "Board") {
+			id = 0;
+		} else if (cardType === "Country") {
+			id = 1;
+		} else {
+			id = 2;
+		}
 
-	var cardName = document.getElementById("id_name").value;
-	var cardType = $("#id_card_type :selected").text();
-	var id;
-	if(cardType === "Board") {
-		id = 0;
-	} else if (cardType === "Country") {
-		id = 1;
-	} else {
-		id = 2;
-	}
+		if(id && cardName) {
+			event.preventDefault();
+			$('[name="_save"]').hide();
 
-	if(id && cardName) {
-		event.preventDefault();
-		$('[name="_save"]').hide();
-
-		addNewCard(cardName, id);
+			addNewCard(cardName, id);
+		}
 	}
 });
